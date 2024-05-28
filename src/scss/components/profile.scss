@@ -1,0 +1,63 @@
+.profile {
+  &List {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    @media(max-width: 767px){
+      gap: 5px;
+    }
+  }
+  &Item {
+    grid-column: 4 span;
+    border: 1px solid $main-color;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 8px;
+    @media(max-width: 767px){
+      row-gap: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 11px;
+      padding-bottom: 11px;
+    }
+    span {
+      border-bottom: 1px solid transparent;
+      transition: border-color .2s linear;
+      @media(max-width: 767px){
+        font-size: 11px;
+      }
+    }
+    &:hover {
+      span {
+        border-color: $main-color;
+      }
+    }
+    &:nth-child(1){
+      border-top-left-radius: 26px;
+    }
+    &:nth-child(6){
+      border-bottom-right-radius: 26px;
+    }
+  }
+}
+.profileBorderB {
+  @media(max-width: 1199px){
+    border-bottom: none;
+  }
+}
+.profileBorderT{
+  @media(max-width: 1199px){
+    border-top: 1px solid #A39FA3;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

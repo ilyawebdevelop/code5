@@ -1,0 +1,141 @@
+<section class="sect pt-0 personal">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        @@include('../sidebar.html',{})
+      </div>
+      <div class="col-lg-8">
+        <div class="accordion accordionProfile d-block d-lg-none" id="accordionProfile">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading_1">
+              <button class="accordion-button mb-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1"
+                aria-expanded="false" aria-controls="collapse_1">
+                Личные данные
+              </button>
+            </h2>
+            <div id="collapse_1" class="accordion-collapse collapse show" aria-labelledby="heading_1">
+              <div class="accordion-body">
+                <ul class="fw-regular gap-3 gap-xxl-4 d-flex flex-column text--lg lh--sm">
+                  <li><a class="textHover" href="#">Заказы</a></li>
+                  <li><a class="textHover" href="#">Подписки</a></li>
+                  <li><a class="textHover" href="#">Вишлист</a></li>
+                  <li><a class="textHover" href="#">Баллы</a></li>
+                  <li><a class="textHover" href="#">Подарочные сертификаты</a></li>
+                  <li><a class="textHover" href="#">Личные данные</a></li>
+                  <li><a class="textHover" href="#">Рассылки</a></li>
+                  <li><a class="textHover" href="#">Выйти из аккаунта</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="row mb-3 align-items-center">
+          <div class="col-lg-4 d-none d-lg-block">
+            Телефон
+          </div>
+          <div class="col-lg-8">
+            <input type="tel" class="formInput formInput--sm text--sm fw-regular formInput--filled"
+              placeholder="+79039770278">
+          </div>
+        </div>
+        <div class="row mb-3 align-items-center">
+          <div class="col-lg-4 d-none d-lg-block">
+            Эл. почта
+          </div>
+          <div class="col-lg-8">
+            <input type="email" class="formInput formInput--sm text--sm fw-regular" placeholder="Ваш E-mail">
+          </div>
+        </div>
+        <div class="row mb-3 align-items-center">
+          <div class="col-lg-4 d-none d-lg-block">
+            Имя
+          </div>
+          <div class="col-lg-8">
+            <input type="text" class="formInput formInput--sm text--sm fw-regular" placeholder="Укажите имя">
+          </div>
+        </div>
+        <div class="row mb-3 align-items-center">
+          <div class="col-lg-4 d-none d-lg-block">
+            Фамилия
+          </div>
+          <div class="col-lg-8">
+            <input type="text" class="formInput formInput--sm text--sm fw-regular" placeholder="Укажите фамилию">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-9">
+            <div class="row mb-3">
+              <div class="col-lg-6 mb-3 mb-lg-0">
+                <div class="selectW selectW--arrow-md">
+                  <select name="size_odezhda" id="size_odezhda" class="formSelect fw-regular text--sm w-100">
+                    <option value="1">Размер одежды</option>
+                    <option value="2">S</option>
+                    <option value="3">XXL</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="selectW selectW--arrow-md">
+                  <select name="size_obuv" id="size_obuv" class="formSelect fw-regular text--sm w-100">
+                    <option value="1">Размер обуви</option>
+                    <option value="2">S</option>
+                    <option value="3">XXL</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-lg-6 mb-3 mb-lg-0">
+                <div class="selectW selectW--arrow-md">
+                  <select name="male" id="male" class="formSelect fw-regular text--sm w-100">
+                    <option class="disabled" value="1" selected>Пол</option>
+                    <option value="2">МУЖ</option>
+                    <option value="3">ЖЕН</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="selectW selectW--arrow-md">
+                  <input type="text" class="formInput formInput--sm text--sm fw-regular" placeholder="Дата Рождения">
+                </div>
+              </div>
+            </div>
+            <button class="button button--black personalSubmit">
+              Сохранить
+            </button>
+          </div>
+        </div>
+        <span class="text-uppercase text--gray py-4 d-block d-lg-none text-center mt-4 text--sm profileBorderT">У ВАС ОСТАЛИСЬ
+          ВОПРОСЫ?</span>
+        <div class="socials d-block d-lg-none">
+          <div class="socialsList d-flex flex-wrap gap-3 justify-content-center">
+            <div>
+              <a href="#" target="_blank">
+                <img src="@img/admin/socials/image-1.svg" alt="icon">
+              </a>
+            </div>
+            <div>
+              <a href="#" target="_blank">
+                <img src="@img/admin/socials/image-2.svg" alt="icon">
+              </a>
+            </div>
+            <div>
+              <a href="#" target="_blank">
+                <img src="@img/admin/socials/image-3.svg" alt="icon">
+              </a>
+            </div>
+            <div>
+              <a href="#" target="_blank">
+                <img src="@img/admin/socials/image-4.svg" alt="icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

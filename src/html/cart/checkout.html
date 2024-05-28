@@ -1,0 +1,264 @@
+<section class="sect cart pt-0">
+  <div class="container">
+    <a class="textLink mt-3" href="/cart.html">Назад</a>
+    <div class="row">
+      <div class="col-xl-8">
+        <div class="checkout d-block d-xl-none">
+          <div class="cartRow d-flex gap-2 gap-lg-3 gap-xl-4">
+            <div class="cartRowL">
+              <span class="cartRowName">E-mail</span>
+            </div>
+            <div class="cartRowR">
+              <input type="email" class="formInput">
+              <div class="agreement mt-3">
+                <input id="emailAgree" type="checkbox" checked hidden>
+                <label class="d-flex gap-3" for="emailAgree">
+                  <div class="rect"></div>
+                  <p class="agreementText">
+                    Хочу получать новости и узнавать о специальных предложениях в числе первых
+                  </p>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="cartRow d-flex gap-2 gap-lg-3 gap-xl-4">
+            <div class="cartRowL">
+              <span class="cartRowName">Имя</span>
+            </div>
+            <div class="cartRowR">
+              <input type="text" class="formInput">
+            </div>
+          </div>
+          <div class="cartRow d-flex gap-2 gap-lg-3 gap-xl-4">
+            <div class="cartRowL">
+              <span class="cartRowName">Фамилия</span>
+            </div>
+            <div class="cartRowR">
+              <input type="text" class="formInput">
+            </div>
+          </div>
+          <div class="cartRow d-flex gap-2 gap-lg-3 gap-xl-4">
+            <div class="cartRowL">
+              <span class="cartRowName">Телефон</span>
+            </div>
+            <div class="cartRowR">
+              <input type="tel" class="formInput" placeholder="+7" value="+7">
+            </div>
+          </div>
+          <div class="delivery cartRow d-flex gap-2 gap-lg-3 gap-xl-4">
+            <div class="cartRowL">
+              <span class="cartRowName">Способ доставки</span>
+            </div>
+            <div class="cartRowR">
+              <div class="radioW">
+                <input type="radio" name="delivery" id="del_1" hidden checked>
+                <label for="del_1">
+                  <div class="round"></div>
+                  <p>
+                    Курьер - 1000 р.
+                  </p>
+                </label>
+              </div>
+              <div class="radioWRight">
+                <p class="mb-2 mb-xl-4 mt-2 mt-xl-4 text--sm">
+                  Вы можете примерить покупки и купить только то, что понравится. Эта опция доступна при оплате курьеру.
+                </p>
+                <p class="mb-2 mb-xl-4 mt-2 mt-xl-4 text--sm">
+                  Когда заказ будет передан в курьерскую службу, мы пришлем вам СМС со ссылкой — по ней вы сможете
+                  изменить день или выбрать удобное время доставки. 
+                  <a class="textLink" href="#" data-fancybox data-src="#modalCart">Подробнее</a>
+                </p>
+              </div>
+
+              <div class="radioW">
+                <input type="radio" name="delivery" id="del_2" hidden>
+                <label for="del_2">
+                  <div class="round"></div>
+                  <p>
+                    Воспользоваться сервисом доставки СДЭК
+                  </p>
+                </label>
+              </div>
+              <div class="radioWRight">
+                <a class="textLink text--sm text-uppercase mt-3 mb-1" href="#">ВЫБРАТЬ ПУНКТ ВЫДАЧИ</a>
+                <p class="mb-2 mb-xl-4 text--sm">
+                  Срок хранения заказа — 14 дней. Для получения понадобится паспорт. Если выбранный пункт переполнен,
+                  перевозчик может изменить его на ближайший. Следить за статусом доставки можно на сайте Boxberry.
+                  Сейчас сроки доставки могут быть увеличены. Приносим извинения и скоро вернемся к привычным срокам.
+                </p>
+              </div>
+
+              <div class="radioW">
+                <input type="radio" name="delivery" id="del_3" hidden>
+                <label for="del_3">
+                  <div class="round"></div>
+                  <p>
+                    Самовывоз из Шоурума <span class="fw-regular">- бесплатно</span>
+                  </p>
+                </label>
+              </div>
+              <div class="radioWRight">
+                <p class="mt-2 mt-xl-4 text--sm">
+                  Срок хранения заказа в магазине — 5 дней
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="cartRow d-flex gap-2 gap-lg-3 gap-xl-4">
+            <div class="cartRowL">
+              <span class="cartRowName">Улица</span>
+            </div>
+            <div class="cartRowR">
+              <input type="text" class="formInput">
+              <div class="d-flex gap-3 mt-3">
+                <div class="d-block w-50">
+                  <div class="mb-1">Дом</div>
+                  <input type="text" class="formInput">
+                </div>
+                <div class="d-block w-50">
+                  <div class="mb-1">Квартира/офис</div>
+                  <input type="text" class="formInput">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment cartRow d-flex gap-2 gap-lg-3 gap-xl-4 mt-2 mt-xl-4">
+            <div class="cartRowL">
+              <span class="cartRowName">Варианты оплаты</span>
+            </div>
+            <div class="cartRowR">
+              <div class="radioW">
+                <input type="radio" name="payment" id="payment_1" hidden checked>
+                <label for="payment_1">
+                  <div class="round"></div>
+                  <p>
+                    Банковской картой
+                  </p>
+                </label>
+              </div>
+              <div class="radioWRight">
+                <p class="mb-2 mb-xl-4 text--sm">
+                  Пожалуйста, оплатите заказ в течение 120 минут.
+                  При оплате онлайн недоступна опция примерки
+                  и частичного выкупа.
+                </p>
+              </div>
+
+              <div class="radioW">
+                <input type="radio" name="payment" id="payment_2" hidden>
+                <label for="payment_2">
+                  <div class="round"></div>
+                  <p>
+                    Оплата долями - 4 платежа по 78 000 р.
+                  </p>
+                </label>
+              </div>
+              <div class="radioWRight">
+                <p class="mb-2 mb-xl-4 text--sm">
+                  Сумма разделится на 4 равных платежа — без процентов и комиссий, как обычная оплата картой. Нажмите
+                  кнопку «Оплатить», чтобы сделать заказ. После этого вы перейдете на страницу сервиса «Долями» и
+                  сможете оформить платеж
+                </p>
+              </div>
+              <div class="cartPaymentGrid mt-3 mb-3">
+                <div class="modalRassrTableItem active">
+                  <div class="text--lg fw-regular">
+                    Сегодня
+                  </div>
+                  <div class="fw-regular">
+                    78 000 р.
+                  </div>
+                </div><!-- /modalRassrTableItem -->
+
+                <div class="modalRassrTableItem">
+                  <div class="text--lg fw-regular">
+                    09 апр.
+                  </div>
+                  <div class="fw-regular">
+                    78 000 р.
+                  </div>
+                </div><!-- /modalRassrTableItem -->
+
+                <div class="modalRassrTableItem">
+                  <div class="text--lg fw-regular">
+                    23 апр.
+                  </div>
+                  <div class="fw-regular">
+                    78 000 р.
+                  </div>
+                </div><!-- /modalRassrTableItem -->
+
+                <div class="modalRassrTableItem">
+                  <div class="text--lg fw-regular">
+                    07 мая
+                  </div>
+                  <div class="fw-regular">
+                    78 000 р.
+                  </div>
+                </div><!-- /modalRassrTableItem -->
+              </div>
+              <div class="radioW mt-2 mt-xl-4">
+                <input type="radio" name="payment" id="payment_3" hidden>
+                <label for="payment_3">
+                  <div class="round"></div>
+                  <p>
+                    Наличными при получении
+                  </p>
+                </label>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="cartRow d-flex gap-2 gap-lg-3 gap-xl-4">
+            <div class="cartRowL">
+              <span class="cartRowName">Комментарий
+                для курьера</span>
+            </div>
+            <div class="cartRowR">
+              <textarea name="deliveryText" id="deliveryText" cols="30" rows="10" class="formText w-100"
+                placeholder="Например, код домофона или номер подъезда"></textarea>
+
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="col-xl-4">
+        <div class="cartOrder d-block d-xl-none">
+          <div class="cartOrderContent">
+            <a href="#" class="cartOrderLink">Войти в личный кабинет</a>
+            <a href="#" class="cartOrderLink">Условия доставки</a>
+            <a href="#" class="cartOrderLink" data-fancybox data-src="#modalCart">Условия обмена и возврата</a>
+            <a href="#" class="cartOrderLink"> Информация об оплате</a>
+            <a href="#" class="cartOrderLink"> Подарочный сертификат</a>
+            <div class="d-flex gap-1 mt-2 mt-xl-4">
+              <input class="promoInput" type="text" placeholder="Промо-код">
+              <button class="promoBtn button button--black px-0">ок</button>
+            </div>
+          </div>
+          <div class="cartOrderFooter">
+            <div class="d-flex justify-content-between gap-2 mb-2 mb-xl-4">
+              <span class="text-uppercase">ДОСТАВКА:</span>
+              <span>1000 р.</span>
+            </div>
+            <div class="d-flex justify-content-between gap-2 mb-2 mb-xl-4">
+              <span class="text-uppercase">ИТОГО:</span>
+              <span>313 000 р.</span>
+            </div>
+            <button class="cartOrderBtn w-100 button button--black">ОПЛАТИТЬ ЗАКАЗ</button>
+            <div class="cartAgreement">
+              Нажимая на кнопку «оплатить заказ», я принимаю условия <a href="#" target="_blank">публичной оферты</a>  и
+              <a href="#" target="_blank">политики конфиденциальности</a> 
+            </div>
+          </div>
+        </div>     
+      </div>
+    </div>
+  </div>
+</section>

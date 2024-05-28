@@ -1,0 +1,462 @@
+<section class="sect shop pt-0">
+  <div class="container container--lg">
+    <div class="shopW">
+      <div class="shopSidebar">
+        <nav class="shopSidebarNav">
+          <ul>
+            <li><a href="#">Все</a></li>
+            <li><a href="#">Новинки</a></li>
+            <li class="active"><a href="#">Верхняя одежда</a></li>
+            <li><a href="#">Джинсы</a></li>
+            <li><a href="#">Вязанный трикотаж</a></li>
+            <li><a href="#">Жакеты</a></li>
+            <li><a href="#">Брюки</a></li>
+            <li><a href="#">Юбки</a></li>
+            <li><a href="#">Рубашки/Блузки</a></li>
+            <li><a href="#">Комбинезоны</a></li>
+            <li><a href="#">Топы/Майки</a></li>
+            <li><a href="#">Аксессуары</a></li>
+            <li><a href="#">Обувь</a></li>
+            <li><a href="#">Premium</a></li>
+            <li><a href="#">Эксклюзив</a></li>
+          </ul>
+        </nav>
+        <div class="d-flex justify-content-between mt-5 mt-lg-0 mb-4 mb-lg-0">
+          <button class="filterBtn d-flex mx-0 mx-lg-auto align-items-center gap-2 mt-0 mt-lg-4 mb-0 mb-lg-3 fw-regular">
+            <img src="@img/icons/filter.svg" alt="icon">
+            Фильтры
+          </button>
+          <button class="filterBtnAction d-flex d-lg-none">
+            <img src="@img/icons/search.svg" alt="icon">
+          </button>
+        </div>
+
+        <div class="shopSidebarSearch">
+          <input type="search">
+          <button class="shopSidebarSearchBtn">
+            <img src="@img/icons/search.svg" alt="icon">
+          </button>
+        </div>
+
+        <div class="accordion shopSidebarAcordion" id="acordionSidebar">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-heading_1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse_1" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapse_1">
+                Сортировка
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapse_1" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-heading_1">
+              <div class="accordion-body">
+                <nav class="shopSidebarNav fw-regular">
+                  <ul>
+                    <li><a href="#">Порядок: по умолчанию</a></li>
+                    <li><a href="#">Порядок: сперва старые </a></li>
+                    <li class="active"><a href="#">Порядок: сперва новые</a></li>
+                    <li><a href="#">Цена: по возрастанию</a></li>
+                    <li><a href="#">Цена: по убыванию</a></li>
+                    <li><a href="#">Название: А-Я</a></li>
+                    <li><a href="#">Название: Я-А</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div><!-- /accordion-item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-heading_2">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse_2" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapse_2">
+                Цена
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapse_2" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-heading_2">
+              <div class="accordion-body">
+                <div id="slider"></div>
+                <div class="d-flex align-items-center gap-1 mt-3">
+                  <input class="priceInput" type="number" id="priceStart">
+                  <div class="sep priceSep"></div>
+                  <input class="priceInput" type="number" id="priceEnd">
+                </div>
+              </div>
+            </div>
+          </div><!-- /accordion-item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-heading_3">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse_3" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapse_3">
+                Размер одежды
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapse_3" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-heading_3">
+              <div class="accordion-body">
+
+                <div class="checkboxItem">
+                  <input type="checkbox" id="size_1" hidden>
+                  <label class="d-flex align-items-start gap-2" for="size_1">
+                    <div class="rect"></div>
+                    <div class="checkboxItemText fw-regular">
+                      XXS
+                    </div>
+                  </label>
+                </div>
+
+                <div class="checkboxItem">
+                  <input type="checkbox" id="size_2" hidden>
+                  <label class="d-flex align-items-start gap-2" for="size_2">
+                    <div class="rect"></div>
+                    <div class="checkboxItemText fw-regular">
+                      XS
+                    </div>
+                  </label>
+                </div>
+                <div class="checkboxItem">
+                  <input type="checkbox" id="size_3" hidden>
+                  <label class="d-flex align-items-start gap-2" for="size_3">
+                    <div class="rect"></div>
+                    <div class="checkboxItemText fw-regular">
+                      S
+                    </div>
+                  </label>
+                </div>
+                <div class="checkboxItem">
+                  <input type="checkbox" id="size_4" hidden>
+                  <label class="d-flex align-items-start gap-2" for="size_4">
+                    <div class="rect"></div>
+                    <div class="checkboxItemText fw-regular">
+                      One size
+                    </div>
+                  </label>
+                </div>
+                <div class="checkboxItem">
+                  <input type="checkbox" id="size_5" hidden>
+                  <label class="d-flex align-items-start gap-2" for="size_5">
+                    <div class="rect"></div>
+                    <div class="checkboxItemText fw-regular">
+                      Под заказ
+                    </div>
+                  </label>
+                </div>
+                <div class="checkboxItem">
+                  <input type="checkbox" id="size_6" hidden>
+                  <label class="d-flex align-items-start gap-2" for="size_6">
+                    <div class="rect"></div>
+                    <div class="checkboxItemText fw-regular">
+                      Под заказ Под заказ Под заказ
+                    </div>
+                  </label>
+                </div>
+                <div class="checkboxItem">
+                  <input type="checkbox" id="size_7" hidden>
+                  <label class="d-flex align-items-start gap-2" for="size_7">
+                    <div class="rect"></div>
+                    <div class="checkboxItemText fw-regular">
+                      XL
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div><!-- /accordion-item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-heading_4">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse_4" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapse_4">
+                Размер обуви
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapse_4" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-heading_4">
+              <div class="accordion-body">
+
+                <div class="checkboxItem">
+                  <input type="checkbox" id="size_1_1" hidden>
+                  <label class="d-flex align-items-start gap-2" for="size_1_1">
+                    <div class="rect"></div>
+                    <div class="checkboxItemText fw-regular">
+                      34
+                    </div>
+                  </label>
+                </div>
+
+                <div class="checkboxItem">
+                  <input type="checkbox" id="size_1_2" hidden>
+                  <label class="d-flex align-items-start gap-2" for="size_1_2">
+                    <div class="rect"></div>
+                    <div class="checkboxItemText fw-regular">
+                      35
+                    </div>
+                  </label>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- /accordion-item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-heading_5">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse_5" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapse_5">
+                Цвет
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapse_5" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-heading_5">
+              <div class="accordion-body">
+                <div class="d-flex flex-wrap gap-2 colorCheckboxW">
+                  <div class="colorCheckbox">
+                    <input type="checkbox" id="color_1">
+                    <label class="gray" for="color_1"></label>
+                  </div>
+                  <div class="colorCheckbox">
+                    <input type="checkbox" id="color_2">
+                    <label class="blue" for="color_2"></label>
+                  </div>
+                  <div class="colorCheckbox">
+                    <input type="checkbox" id="color_3">
+                    <label class="pink" for="color_3"></label>
+                  </div>
+                  <div class="colorCheckbox">
+                    <input type="checkbox" id="color_4">
+                    <label class="yellow" for="color_4"></label>
+                  </div>
+                  <div class="colorCheckbox">
+                    <input type="checkbox" id="color_5">
+                    <label class="green" for="color_5"></label>
+                  </div>
+                  <div class="colorCheckbox">
+                    <input type="checkbox" id="color_6">
+                    <label class="black" for="color_6"></label>
+                  </div>
+                  <div class="colorCheckbox">
+                    <input type="checkbox" id="color_7">
+                    <label class="transparent" for="color_7"></label>
+                  </div>
+                  <div class="colorCheckbox">
+                    <input type="checkbox" id="color_8">
+                    <label class="purple" for="color_8"></label>
+                  </div>
+                  <div class="colorCheckbox">
+                    <input type="checkbox" id="color_10">
+                    <label class="red" for="color_10"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /accordion-item -->
+        </div>
+
+
+
+
+      </div>
+      <div class="shopContent">
+        <div class="shopList">
+
+          <div class="productCard">
+
+            <div class="swiper productCardSlider">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide productCardSlide">
+                  <img class="productCardSlideImg" src="@img/admin/product/image-1.jpg" alt="image">
+                </div><!-- /productCardSlide -->
+
+                <div class="swiper-slide productCardSlide">
+                  <img class="productCardSlideImg" src="@img/admin/product/image-2.jpg" alt="image">
+                </div><!-- /productCardSlide -->
+                <div class="swiper-slide productCardSlide">
+                  <img class="productCardSlideImg" src="@img/admin/product/image-3.jpg" alt="image">
+                </div><!-- /productCardSlide -->
+                <div class="swiper-slide productCardSlide">
+                  <img class="productCardSlideImg" src="@img/admin/product/image-4.jpg" alt="image">
+                </div><!-- /productCardSlide -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+              <a class="productCardLink" href="#"></a>
+            </div>
+
+            <div class="productCardContent">
+              <a href="#" class="productCardTitle">Платье черное</a>
+              <p class="productCardDescr">
+                Платье черное шикарное. Сделанное как раз для вас! Платье черное шикарное. Сделанное как раз для вас!
+              </p>
+              <div class="productCardB d-flex align-items-center gap-3 flex-wrap">
+                <div class="productCardPrice">
+                  89 000 р.
+                </div>
+                <div class="productCardColor">
+                  <ul>
+                    <li class="productCardColorItem productCardColorItem--black">
+
+                    </li>
+                    <li class="productCardColorItem productCardColorItem--red">
+
+                    </li>
+                    <li class="productCardColorItem productCardColorItem--pink">
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><!-- /productCard -->
+
+          <div class="productCard">
+
+            <div class="swiper productCardSlider">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide productCardSlide">
+                  <img class="productCardSlideImg" src="@img/admin/product/image-2.jpg" alt="image">
+                </div><!-- /productCardSlide -->
+
+                <div class="swiper-slide productCardSlide">
+                  <img class="productCardSlideImg" src="@img/admin/product/image-1.jpg" alt="image">
+                </div><!-- /productCardSlide -->
+                <div class="swiper-slide productCardSlide">
+                  <img class="productCardSlideImg" src="@img/admin/product/image-4.jpg" alt="image">
+                </div><!-- /productCardSlide -->
+                <div class="swiper-slide productCardSlide">
+                  <img class="productCardSlideImg" src="@img/admin/product/image-3.jpg" alt="image">
+                </div><!-- /productCardSlide -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+              <a class="productCardLink" href="#"></a>
+            </div>
+
+            <div class="productCardContent">
+              <a href="#" class="productCardTitle">Платье Шелковое Платье Шелковое Платье Шелковое</a>
+              <p class="productCardDescr">
+                Платье черное шикарное. Сделанное как раз для вас!
+              </p>
+              <div class="productCardB d-flex align-items-center gap-3 flex-wrap">
+                <div class="productCardPrice">
+                  89 000 р.
+                </div>
+                <div class="productCardColor">
+                  <ul>
+                    <li class="productCardColorItem productCardColorItem--black">
+
+                    </li>
+                    <li class="productCardColorItem productCardColorItem--red">
+
+                    </li>
+                    <li class="productCardColorItem productCardColorItem--pink">
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><!-- /productCard -->
+
+          <div class="productCard">
+
+            <div class="swiper productCardSlider">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide productCardSlide">
+                  <img class="productCardSlideImg" src="@img/admin/product/image-1.jpg" alt="image">
+                </div><!-- /productCardSlide -->
+
+                <div class="swiper-slide productCardSlide">
+                  <img class="productCardSlideImg" src="@img/admin/product/image-2.jpg" alt="image">
+                </div><!-- /productCardSlide -->
+                <div class="swiper-slide productCardSlide">
+                  <img class="productCardSlideImg" src="@img/admin/product/image-3.jpg" alt="image">
+                </div><!-- /productCardSlide -->
+                <div class="swiper-slide productCardSlide">
+                  <img class="productCardSlideImg" src="@img/admin/product/image-4.jpg" alt="image">
+                </div><!-- /productCardSlide -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+              <a class="productCardLink" href="#"></a>
+              <div class="sale">Sale</div>
+            </div>
+
+            <div class="productCardContent">
+              <a href="#" class="productCardTitle">Платье черное</a>
+              <p class="productCardDescr">
+                Платье черное шикарное. Сделанное как раз для вас!
+              </p>
+              <div class="productCardB d-flex align-items-center gap-3 flex-wrap">
+                <div class="productCardPrice">
+                  89 000 р.
+                </div>
+                <div class="productCardColor">
+                  <ul>
+                    <li class="productCardColorItem productCardColorItem--black">
+
+                    </li>
+                    <li class="productCardColorItem productCardColorItem--red">
+
+                    </li>
+                    <li class="productCardColorItem productCardColorItem--pink">
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><!-- /productCard -->
+
+          <div class="productCard">
+
+            <div class="swiper productCardSlider">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide productCardSlide">
+                  <img class="productCardSlideImg" src="@img/admin/product/image-3.jpg" alt="image">
+                </div><!-- /productCardSlide -->
+
+                <div class="swiper-slide productCardSlide">
+                  <img class="productCardSlideImg" src="@img/admin/product/image-4.jpg" alt="image">
+                </div><!-- /productCardSlide -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+              <a class="productCardLink" href="#"></a>
+            </div>
+
+            <div class="productCardContent">
+              <a href="#" class="productCardTitle">Платье черное</a>
+              <p class="productCardDescr">
+                Платье черное шикарное. Сделанное как раз для вас!
+              </p>
+              <div class="productCardB d-flex align-items-center gap-3 flex-wrap">
+                <div class="productCardPrice">
+                  89 000 р.
+                </div>
+                <div class="productCardColor">
+                  <ul>
+                    <li class="productCardColorItem productCardColorItem--black">
+
+                    </li>
+                    <li class="productCardColorItem productCardColorItem--red">
+
+                    </li>
+                    <li class="productCardColorItem productCardColorItem--pink">
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><!-- /productCard -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

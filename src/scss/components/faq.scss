@@ -1,0 +1,42 @@
+.faq {
+  .accordion .row {
+    row-gap: 60px;
+    @media(max-width: 991px){
+      row-gap: 0;
+    }
+  }
+  .accordion-header{
+    pointer-events: none;
+    @media(max-width: 991px){
+      pointer-events: unset;
+    }
+  }
+  .accordion-button {
+    @media(max-width: 991px){
+      border-bottom: 1px solid $main-color;
+    }
+    @media(max-width: 767px){
+      font-size: 24px;
+      padding-bottom: 15px;
+    }
+    &::after {
+      display: none;
+      @media(max-width: 991px){
+        display: block;
+      }
+    }
+  }
+  .accordion-body {
+    .item {
+      border-bottom: 1px solid transparent;
+      transition: text-decoration .2s linear;
+      width: fit-content;
+      margin-bottom: 18px;
+      font-weight: 400;
+      &:hover {
+        // border-color: $main-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}

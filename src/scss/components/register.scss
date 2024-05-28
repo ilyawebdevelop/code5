@@ -1,0 +1,88 @@
+.register {
+  &Form {
+    max-width: 440px;
+
+    .text--lg {
+      @media(max-width: 767px){
+        font-size: 10px;
+      }
+    }
+
+    &Phone {
+      border-left: 1px solid $main-color;
+      padding-left: 10px;
+      height: 30px;
+      width: 100%;
+      padding-right: 20px;
+      @media(max-width: 991px){
+        font-size: 10px;
+        height: 20px;
+      }
+
+      &W {
+        border: 1px solid $main-color;
+        padding: 14px 9px;
+        @media(max-width: 991px){
+          padding: 7px 4px;
+        }
+
+        select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background: url('@img/icons/select-arrow-thin.svg') no-repeat right 10px center / 11px;
+          padding-right: 27px;
+          @media(max-width: 767px){
+            height: 20px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    &Title {
+      &.text--lg {
+        @media(max-width: 991px){
+          font-size: 16px;
+        }
+      }   
+    }
+    .formInput {
+      color: #1A1A1A;
+      &::placeholder {
+        color: #1A1A1A;
+      }
+    }
+    .button {
+      @media(max-width: 991px){
+        height: 40px;
+      }
+    }
+    .socials {
+      a {
+        img {
+          @media(max-width: 767px){
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+.codeDescr{
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  @media(max-width: 767px){
+    margin-bottom: 15px;
+    max-width: 230px;
+  }
+}
+.codeInput {
+  @media(max-width: 767px){
+    max-width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

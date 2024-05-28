@@ -1,0 +1,65 @@
+.cat {
+  &List {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  &Card {
+    grid-column: 6 span;
+    position: relative;
+    &:nth-child(1), &:nth-child(3){
+      .catCardTitle {
+        right: 38px;
+        color: #A39FA3;
+        text-align: end;
+        @media(max-width: 767px){
+          right: 13px;
+        }
+      }
+    }
+    &:nth-child(2), &:nth-child(4){
+      .catCardTitle {
+        left: 38px;
+        color: #C1C1C1;
+        @media(max-width: 767px){
+          left: 13px;
+        }
+      }
+    }  
+    &Title {
+      position: absolute;     
+      bottom: 65px;
+      font-size: 52px;
+      line-height: 60px;
+      font-style: italic;
+      font-weight: 900;
+      width: calc(100% - 76px);
+      @media(max-width: 1400px){
+        font-size: 40px;
+        line-height: 50px;
+      }
+      @media(max-width: 1199px){
+        font-size: 36px;
+        line-height: 44px;
+      }
+      @media(max-width: 991px){
+        font-size: 30px;
+        line-height: 36px;
+        bottom: 30px;
+      }
+      @media(max-width: 767px){
+        font-size: 18px;
+        line-height: 22px;
+        width: calc(100% - 20px);
+      }
+    }
+    img {
+      height: 55vw;
+      width: 100%;
+      object-fit: cover;
+      transition: opacity .2s linear;
+      &:hover {
+        opacity: .9;
+      }
+    }
+  }
+}

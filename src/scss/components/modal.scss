@@ -1,0 +1,237 @@
+// modal
+.modal {
+  display: none;
+  width: 700px;
+  padding: 32px 65px 65px 65px;
+  height: fit-content;
+  @media(max-width: 991px){
+    padding: 40px;
+  }
+  @media(max-width: 420px){
+    padding: 30px;
+  }
+  &Content {
+    position: relative;
+    z-index: 1;
+  }
+  &Title {
+    font-size: 20px;
+  }
+  &Head {
+    padding-bottom: 20px;
+    margin-bottom: 26px;
+    &--borderB {
+      border-bottom: 1px solid #1A1A1A;
+    }
+    &--flex {
+      display: flex;
+      align-items: center;
+    }
+    &--center {
+      justify-content: center;
+    }
+    &--between {
+      justify-content: space-between;
+    }
+    h2 {
+      position: relative;
+      z-index: 41;
+    }
+    .f-button {
+      &--static {
+        position: static;
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        margin-right: 28px;       
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .btn-close {
+    background: none;
+    opacity: 1;
+  }
+}
+.modalRassrHead {
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  @media(max-width: 991px){
+    padding-bottom: 0;
+  }
+  .f-button--static {
+    margin-right: 0;
+  }
+}
+.fancybox__backdrop {
+  background: rgba($color: #7D7469, $alpha: .62);
+}
+.fancybox__content {
+  color: #1A1A1A;
+}
+.modalSizeDescr{
+  color: #A39FA3;
+}
+.modalSizeTable {
+  thead {
+    tr {
+      th {
+        font-weight: 400;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        min-height: 30px;
+        border-bottom: 1px solid #1A1A1A;
+        border-top: 1px solid #1A1A1A;
+        font-size: 14px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        @media(max-width: 767px){
+          padding-left: 4px;
+          padding-right: 4px;
+          font-size: 12px;
+        }
+        &.tableHeadSm {
+          font-size: 10px;
+          line-height: 9px;
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      &:not(:last-child){
+        td {
+          border-bottom: 1px solid rgba($color: #1A1A1A, $alpha: .25);
+        }
+      }
+      &:last-child{
+        td {
+          border-bottom: 1px solid rgba($color: #1A1A1A, $alpha: 1);
+        }
+      }
+      td {
+        font-weight: 400;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+        @media(max-width: 767px){
+          padding-left: 4px;
+          padding-right: 4px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+#modalRassr {
+  border-radius: 20px;
+  padding-top: 50px;
+}
+.modalRassrTitle{
+  line-height: 30px;
+  text-align: center;
+  @media(max-width: 991px){
+    line-height: 20px;
+  }
+  @media(max-width: 767px){
+    font-size: 14px;
+  }
+}
+.modalRassrDescr {
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  @media(max-width: 991px){
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @media(max-width: 767px){
+    font-size: 14px;    
+  }
+}
+.modalRassrFooter {
+  font-size: 16px;
+  line-height: 20px;
+  color: #414246;
+  max-width: 427px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  @media(max-width: 767px){
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  a {
+    border-bottom: 1px solid #1A1A1A;
+    width: fit-content;
+    display: inline-block;
+  }
+}
+.modalRassrTable {
+  background-color: #F5F5F5;
+  padding: 44px 37px 45px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  @media(max-width: 991px){
+    padding: 30px;
+  }
+  @media(max-width: 767px){
+    padding: 20px;
+  }
+  @media(max-width: 767px){
+    margin-bottom: 20px;
+  }
+  &Head {
+    display: flex;
+    column-gap: 2px;
+    margin-bottom: 14px;
+  }
+  &Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 8px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #A39FA3;
+    line-height: 20px;
+    @media(max-width: 767px){
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &.active {
+      border-color: #1A1A1A;
+    }
+  }
+}
+.modalRassrCheckbox {
+  margin-left: 10px;
+  padding-left: 22px;
+  margin-bottom: 14px;
+  background: url('@img/icons/check.svg') no-repeat left top 10px / 11px;
+  line-height: 20px;
+  @media(max-width: 767px){
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+#modalCart {
+  border-radius: 20px;
+  padding: 85px 110px 85px;
+}
+.modalRassrImg {
+  @media(max-width: 767px){
+    width: 200px;
+  }
+}

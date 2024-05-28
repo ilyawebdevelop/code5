@@ -1,0 +1,113 @@
+.cert {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  @media(max-width: 991px){
+    grid-template-columns: 1fr;
+    display: block;
+  }
+
+  &L {
+    background-color: #C1C1C1;
+    display: flex;   
+    justify-content: center;
+    position: relative;
+    padding-bottom: 100px;
+    @media(max-width: 991px){
+      margin-bottom: 30px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @media(max-width: 575px){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &R {
+    padding-left: 39px;
+    padding-right: 39px;
+    max-width: 500px;
+    @media(max-width: 991px){
+      max-width: 100%;
+    }
+    @media(max-width: 575px){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &Card {
+    position: sticky;
+    top: calc(50% - 74px);
+    height: fit-content;
+    // transform: translateY(-50%);
+    @media(max-width: 1199px){
+      width: calc(100% - 200px);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media(max-width: 991px){
+      width: 480px;
+    }
+    @media(max-width: 575px){
+      width: 300px;
+    }
+    img {
+      box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      width: 480px;    
+      @media(max-width: 991px){
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media(max-width: 575px){
+        width: 300px;
+      }
+    }
+
+    span {
+      position: absolute;
+      color: #fff;
+      font-size: 48px;
+      font-weight: 500;
+      top: 35px;
+      left: 20px;
+      @media(max-width: 1199px){
+        font-size: 32px;
+      }
+    }
+  }
+
+  &Slide {
+
+    input {
+      &:checked {
+        &+label {
+          border-color: #000000;
+        }
+      }
+    }
+
+    label {
+      padding-bottom: 12px;
+      border-bottom: 1px solid transparent;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+        transition: opacity .2s linear;
+        height: 54px;
+        &:hover {
+          opacity: .85;
+        }
+      }
+    }
+  }
+}
+#timeSelect {
+  font-size: 16px;
+}
+#timeSelectClock {
+  font-size: 16px;
+}

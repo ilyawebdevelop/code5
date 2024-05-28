@@ -1,0 +1,25 @@
+.socials {
+  ul {
+    display: flex;
+    column-gap: 8px;
+    li {
+      a {
+        img {
+          transition: opacity .2s linear;
+         
+          &:hover {
+            opacity: .8;
+          }
+        }
+      }
+    }
+  }
+  a {
+    img {
+      @media(max-width: 991px){
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

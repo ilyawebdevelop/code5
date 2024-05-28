@@ -1,0 +1,62 @@
+.models {
+  padding-bottom: 120px;
+  @media(max-width: 1199px){
+    padding-bottom: 80px;
+  }
+  @media(max-width: 767px){
+    padding-bottom: 60px;
+  }
+  &Item {
+    margin-bottom: 31px;
+    @media(max-width: 991px){
+      margin-bottom: 40px;
+    }
+    @media(max-width: 767px){
+      margin-bottom: 30px;
+    }
+    .text--lg {
+      line-height: 30px;
+      @media(max-width: 991px){
+        font-size: 14px;
+      }
+      @media(max-width: 767px){
+        line-height: 16px;
+      }
+    }
+    &Title {
+      font-size: 30px;
+      line-height: 47px;
+      font-weight: 400;
+      @media(max-width: 1199px){
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+    &Img {
+      height: 420px;
+      width: 100%;
+      object-fit: cover;
+      @media(max-width: 991px){
+        margin-bottom: 40px;
+      }
+      @media(max-width: 767px){
+        margin-bottom: 20px;
+      }
+      @media(max-width: 575px){
+        height: 60vw;
+      }
+    }
+    .h1--lg {
+      @media(max-width: 1199px){
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+  }
+  &More {
+    margin-top: 31px;
+    @media(max-width: 991px){
+      font-size: 14px;
+    }
+  }
+}

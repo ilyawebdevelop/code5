@@ -1,0 +1,86 @@
+<section class="sect pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        @@include('../sidebar.html',{})
+      </div>
+      <div class="col-lg-8">
+        <div class="accordion accordionProfile d-block d-lg-none" id="accordionProfile">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading_1">
+              <button class="accordion-button mb-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1"
+                aria-expanded="false" aria-controls="collapse_1">
+                Доставка
+              </button>
+            </h2>
+            <div id="collapse_1" class="accordion-collapse collapse show" aria-labelledby="heading_1">
+              <div class="accordion-body">
+                <ul class="fw-regular gap-3 gap-xxl-4 d-flex flex-column text--lg lh--sm">
+                  <li><a class="textHover" href="#">Заказы</a></li>
+                  <li><a class="textHover" href="#">Подписки</a></li>
+                  <li><a class="textHover" href="#">Вишлист</a></li>
+                  <li><a class="textHover" href="#">Баллы</a></li>
+                  <li><a class="textHover" href="#">Подарочные сертификаты</a></li>
+                  <li><a class="textHover" href="#">Личные данные</a></li>
+                  <li><a class="textHover" href="#">Рассылки</a></li>
+                  <li><a class="textHover" href="#">Выйти из аккаунта</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="tabs orderTabs" data-tabs="popup">
+          <ul class="tabs__nav">
+            <li class="tabs__nav-item w-50"><button class="tabs__nav-btn w-100 fw-light" type="button">Онлайн</button>
+            </li>
+            <li class="tabs__nav-item w-50"><button class="tabs__nav-btn w-100 fw-light" type="button">Из
+                магазинов</button></li>
+          </ul>
+          <div class="tabs__content">
+            <div class="tabs__panel orderOnline">
+              <img class="mx-auto mb-4 orderCartImg" src="@img/icons/cart-order.svg" alt="cart">
+              <div class="text--lg text-center fw-regular mb-4">Заказов пока не было</div>
+              <p class="text--gray orderOnlineDescr mx-auto text-center text--sm">
+                Все ваши покупки можно будет посмотреть в этом разделе
+              </p>
+              <a href="#" class="button button--transparent text--sm orderOnlineBtn mx-auto mt-4">Перейти в каталог</a>
+
+            </div>
+            <div class="tabs__panel">Из
+              магазинов</div>
+          </div>
+        </div>
+        <span class="text-uppercase text--gray py-4 d-block d-lg-none text-center mt-4 text--sm profileBorderT">У ВАС
+          ОСТАЛИСЬ
+          ВОПРОСЫ?</span>
+        <div class="socials d-block d-lg-none">
+          <div class="socialsList d-flex flex-wrap gap-3 justify-content-center">
+            <div>
+              <a href="#" target="_blank">
+                <img src="@img/admin/socials/image-1.svg" alt="icon">
+              </a>
+            </div>
+            <div>
+              <a href="#" target="_blank">
+                <img src="@img/admin/socials/image-2.svg" alt="icon">
+              </a>
+            </div>
+            <div>
+              <a href="#" target="_blank">
+                <img src="@img/admin/socials/image-3.svg" alt="icon">
+              </a>
+            </div>
+            <div>
+              <a href="#" target="_blank">
+                <img src="@img/admin/socials/image-4.svg" alt="icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

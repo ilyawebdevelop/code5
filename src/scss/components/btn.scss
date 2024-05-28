@@ -1,0 +1,184 @@
+// btn
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: background-color .2s linear, color .2s linear;
+  height: 32px;
+  font-weight: 400;
+  padding-left: 27px;
+  padding-right: 27px;
+
+  @media(max-width: 1199px) {
+    font-size: 20px;
+  }
+
+  @media(max-width: 991px) {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  &--black {
+    background-color: #1a1a1a;
+    color: #fff;
+    transition: opacity .2s linear;
+
+    &:hover {
+      opacity: .85;
+    }
+
+    &:disabled {
+      background-color: #A39FA3;
+      pointer-events: none;
+    }
+  }
+
+  &--gray {
+    background-color: #A39FA3;
+    color: #fff;
+
+    &:hover {
+      background-color: #1a1a1a;
+    }
+  }
+
+  &--transparent {
+    border: 1px solid #A39FA3;
+  }
+
+
+  &--radius {
+    border-radius: 10px;
+  }
+
+  &--md {
+    height: 34px;
+  }
+
+  &--lg {
+    height: 60px;
+
+    @media(max-width: 991px) {
+      height: 45px;
+    }
+  }
+
+  &--100 {
+    width: 100%;
+  }
+}
+
+.banerBtn {
+  margin-top: 44px;
+
+  @media(max-width: 767px) {
+    margin-top: 30px;
+  }
+}
+
+.productAddToCart {
+  font-size: 10px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.certBtn {
+  height: 44px;
+  margin-top: 35px;
+
+  @media(max-width: 1199px) {
+    height: 60px;
+    font-size: 16px;
+    margin-top: 25px;
+  }
+
+  @media(max-width: 767px) {
+    height: 44px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+
+.promoBtn {
+  min-width: 44px;
+  width: 44px;
+  height: 33px;
+  font-weight: 300;
+}
+
+.cartOrderBtn {
+  height: 44px;
+  margin-bottom: 26px;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 47px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+  }
+}
+
+.cartAgreement {
+  font-size: 12px;
+  line-height: 14px;
+
+  a {
+    border-bottom: 1px solid #000;
+    display: inline;
+  }
+}
+
+.contactsBtn {
+  width: 360px;
+  @media(max-width: 767px){
+    margin-bottom: 40px;
+  }
+  @media(max-width: 575px){
+    width: 180px;
+    height: 34px;
+  }
+}
+
+.orderOnlineBtn {
+  height: 44px;
+  padding-left: 50px;
+  padding-right: 50px;
+  @media(max-width: 991px){
+    height: 30px;
+  }
+
+  &:hover {
+    background-color: $main-color;
+    color: #fff;
+  }
+}
+
+.personalSubmit {
+  height: 36px;
+  margin-left: auto;
+}
+
+.modelsBtn {
+  @media(max-width: 1199px) {
+    height: 60px;
+  }
+
+  @media(max-width: 767px) {
+    height: 35px;
+  }
+}
+
+.filterBtn {
+  @media(max-width: 991px) {
+    font-size: 16px;
+  }
+}
+.checkoutBtn{
+  font-size: 16px;
+}

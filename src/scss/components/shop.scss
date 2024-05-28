@@ -1,0 +1,343 @@
+.shop {
+  &W {
+    display: flex;
+    column-gap: 44px;
+    @media(max-width: 991px){
+      flex-direction: column;
+    }
+  }
+
+  &Sidebar {
+    width: 237px;
+    min-width: 237px;
+    @media(max-width: 991px){
+      width: 100%;
+    }
+    &Nav {
+      ul {
+        @media(max-width: 991px){
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          row-gap: 20px;
+          column-gap: 10px;
+        }
+        li {
+          &.active {
+            a {
+              background-color: #D9D9D9;
+              @media(max-width: 991px){
+                background-color: transparent;
+              }
+            }
+          }
+          &:not(:last-child){
+            margin-bottom: 10px;
+            @media(max-width: 991px){
+              margin-bottom: 0;
+            }
+          }
+          a {
+            padding-left: 6px;
+            transition: background-color .2s linear;
+            position: relative;
+            left: -6px;
+            @media(max-width: 991px){
+              left: 0;
+              padding-right: 0;
+              padding-left: 0;
+            }
+            @media(max-width: 991px){
+              font-size: 16px;
+            }
+            @media(max-width: 767px){
+              font-size: 14px;
+            }
+            &:hover {
+              background-color: #D9D9D9;
+            }
+          }
+        }
+      }
+    }
+    &Search {
+      position: relative;
+      @media(max-width: 991px){
+        display: none;
+        margin-bottom: 20px;
+      }
+      &.active {
+        display: block;
+      }
+      input {
+        border-bottom: 1px solid #1A1A1A;
+        width: 100%;
+        padding-bottom: 7px;
+        padding-right: 30px;
+      }
+      &Btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+
+  &List {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 13px;
+    row-gap: 30px;
+    @media(max-width: 767px){
+      column-gap: 9px;
+    }
+
+    .productCard {
+      grid-column: 4 span;
+      @media(max-width: 991px){
+        grid-column: 6 span;
+      }
+    }
+  }
+}
+
+.productCard {
+  .sale {
+    width: 78px;
+    height: 78px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    border-radius: 50%;
+    background-color: #F40009;
+    z-index: 1;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    pointer-events: none;
+  }
+
+  &Content {
+    padding-top: 9px;
+  }
+
+  &Slide {
+    &Img {
+      height: 480px;
+      width: 100%;
+      object-fit: cover;
+      @media(max-width: 1400px){
+        height: 370px;
+      }
+      @media(max-width: 1199px){
+        height: 300px;
+      }
+      @media(max-width: 991px){
+        height: 500px;
+      }
+      @media(max-width: 767px){
+        height: 400px;
+      }
+      @media(max-width: 575px){
+        height: 65vw;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 5px;
+    width: calc(100% - 14px);
+    left: 7px;
+    bottom: 12px;
+    @media(max-width: 991px){
+      display: none;
+    }
+
+    .swiper-pagination-bullet {
+      grid-column: 3 span;
+      width: 100%;
+      border-radius: 0;
+      background-color: #A39FA3;
+      opacity: 1;
+      margin-left: 0;
+      margin-right: 0;
+      @media(max-width: 1199px){
+        height: 4px;
+      }
+
+      &-active {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &Title {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 9px;
+    @media(max-width: 991px){
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 2px;
+    }
+    @media(max-width: 767px){
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &Descr {
+    font-size: 12px;
+    line-height: 18px;
+    @media(max-width: 991px){
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+
+  &Price {
+    font-size: 15px;
+    line-height: 18px;
+    @media(max-width: 991px){
+      font-size: 16px;
+    }
+    @media(max-width: 767px){
+      font-size: 14px;
+    }
+  }
+
+  &Color {
+    ul {
+      display: flex;
+      column-gap: 13px;
+      @media(max-width: 991px){
+        column-gap: 9px;
+      }
+    }
+
+    &Item {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+
+      &--black {
+        background-color: #1a1a1a;
+      }
+
+      &--red {
+        background-color: #F40009;
+      }
+
+      &--pink {
+        background-color: #FCDDEC;
+      }
+    }
+  }
+
+  &B {
+    margin-top: 9px;
+  }
+
+  &Link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    &:hover {
+      &+.swiper-wrapper {
+        .productCardSlide {
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
+.colorCheckbox{
+  &W {
+    max-width: 150px;
+  }
+  input {
+    display: none;
+  }
+  label {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    display: block;
+    &.red {
+      background-color: #A60000;
+    }
+    &.gray {
+      background-color: #D9D9D9;
+    }
+    &.blue {
+      background-color: #140D40;
+    }
+    &.pink {
+      background-color: #F178B6;
+    }
+    &.yellow {
+      background-color: #FFC700;
+    }
+    &.green {
+      background-color: #56DF75;
+    }
+    &.black {
+      background-color: #161616;
+    }
+    &.transparent{
+      background-color: transparent;
+      border: 1px solid #1A1A1A;
+    }
+    &.purple {
+      background-color: #A5A6F6;
+    }
+  }
+}
+.shopSidebarAcordion {
+  margin-top: 25px;
+  @media(max-width: 991px){
+    display: none;
+    margin-bottom: 20px;
+  }
+  &.active {
+    display: block;
+  }
+}
+.checkboxItem {
+  &:not(:last-child){
+    margin-bottom: 9px;
+  }
+  .rect {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border: 1px solid #1A1A1A;
+  }
+  label {
+    cursor: pointer;
+  }
+  input {   
+    &:checked{
+      &+label {
+        .rect {
+          background: url('@img/icons/checked.svg') no-repeat center center / 12px;
+        }
+      }
+    }
+  }
+}
+#slider {
+  width: 185px;
+}

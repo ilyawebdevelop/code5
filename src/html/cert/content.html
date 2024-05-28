@@ -1,0 +1,278 @@
+<section class="sect cert p-0">
+  <div class="container d-block d-lg-none">
+    <div class="mb-4 d-block d-lg-none fw-regular">Подарочный сертификат</div>
+    <div class="swiper certSlider mt-4 mb-4 d-block d-lg-none">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg_1" id="certImg_1_1" hidden checked>
+          <label for="certImg_1_1">
+            <img src="@img/admin/cert/image-1.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg_1" id="certImg_2_1" hidden>
+          <label for="certImg_2_1">
+            <img src="@img/admin/cert/image-2.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg_1" id="certImg_3_1" hidden>
+          <label for="certImg_3_1">
+            <img src="@img/admin/cert/image-3.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg_1" id="certImg_4_1" hidden>
+          <label for="certImg_4_1">
+            <img src="@img/admin/cert/image-4.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg_1" id="certImg_5_1" hidden>
+          <label for="certImg_5_1">
+            <img src="@img/admin/cert/image-5.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg_1" id="certImg_6_1" hidden>
+          <label for="certImg_6_1">
+            <img src="@img/admin/cert/image-3.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg_1" id="certImg_7_1" hidden>
+          <label for="certImg_7_1">
+            <img src="@img/admin/cert/image-4.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg_1" id="certImg_8_1" hidden>
+          <label for="certImg_8_1">
+            <img src="@img/admin/cert/image-5.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+
+      </div>
+    </div>
+  </div>
+  <div class="certL">
+    <div class="certCard">
+      <img src="@img/admin/cert/image-1.png" alt="image">
+      <span>Code5</span>
+    </div>
+  </div>
+  <div class="certR fw-regular">
+    <div class="mb-4 d-none d-lg-block">Подарочный сертификат</div>
+
+    <div class="d-flex gap-2 gap-sm-5 gap-lg-3 flex-wrap mb-2">
+
+      <div class="radioW">
+        <input type="radio" id="sbosob_1" name="sposob" hidden checked>
+        <label class="d-flex gap-2 align-items-center" for="sbosob_1">
+          <div class="rect"></div>
+          <span>На телефон</span>
+        </label>
+      </div>
+      <div class="radioW">
+        <input type="radio" id="sbosob_2" name="sposob" hidden>
+        <label class="d-flex gap-2 align-items-center" for="sbosob_2">
+          <div class="rect"></div>
+          <span>На e-mail с поздравлением</span>
+        </label>
+      </div>
+
+    </div>
+
+    <div class="inputW mb-4">
+      <div class="inputName mb-1 text--xs text--gray">
+        Телефон получателя*
+      </div>
+      <input type="tel" class="formInput" placeholder="+7(___)___-__-__">
+    </div>
+
+    <div class="info text--xs bg--gray mb-4">
+      Проверьте правильность данных. Изменить их после покупки можно только через поддержку
+    </div>
+
+    <div class="mb-1">Кто отправляет</div>
+
+    <div class="inputW mb-1">
+      <div class="inputName mb-1 text--xs text--gray">
+        E‑mail*
+      </div>
+      <input type="text" class="formInput" placeholder="Введите почту отправителя">
+    </div>
+
+    <div class="mb-1 text--xs text--gray">
+      Отправим чек на почту
+    </div>
+
+    <div class="mb-4">Когда отправить</div>
+
+    <div class="d-flex gap-3 flex-wrap mb-4">
+
+      <div class="radioW">
+        <input type="radio" id="time_1" name="time" hidden checked>
+        <label class="d-flex gap-2 align-items-center" for="time_1">
+          <div class="rect"></div>
+          <span>Сразу после оплаты</span>
+        </label>
+      </div>
+      <div class="radioW">
+        <input type="radio" id="time_2" name="time" hidden>
+        <label class="d-flex gap-2 align-items-center" for="time_2">
+          <div class="rect"></div>
+          <span>Указать дату и время</span>
+        </label>
+      </div>
+
+    </div>
+
+    <div class="selectW selectW--arrow-lg mb-4">
+      <div class="inputName mb-1 text--xs text--gray">
+        Часовой пояс
+      </div>
+      <select class="w-100" name="timeSelect" id="timeSelect">
+        <option value="time_1">Московское время (MSK, UTC+3:00)</option>
+        <option value="time_2">Английское время (En, UTC+3:00)</option>
+      </select>
+    </div>
+
+    <div class="d-flex gap-3 flex-column flex-sm-row">
+      <div class="inputW w-sm-50 w-100">
+        <div class="inputName mb-1 text--xs text--gray">
+          Дата
+        </div>
+        <input class="formInput formInput--calendar" id="airdatepicker" type="text" placeholder="Выберите дату">
+      </div>
+      <div class="selectW selectW--arrow-lg w-sm-50 w-100">
+        <div class="inputName mb-1 text--xs text--gray">
+          Время
+        </div>
+        <select class="w-100" name="timeSelectClock" id="timeSelectClock">
+          <option value="clock_1">00:00</option>
+          <option value="clock_2">00:05</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="swiper certSlider mt-4 d-none d-lg-block">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg" id="certImg_1" hidden checked>
+          <label for="certImg_1">
+            <img src="@img/admin/cert/image-1.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg" id="certImg_2" hidden>
+          <label for="certImg_2">
+            <img src="@img/admin/cert/image-2.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg" id="certImg_3" hidden>
+          <label for="certImg_3">
+            <img src="@img/admin/cert/image-3.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg" id="certImg_4" hidden>
+          <label for="certImg_4">
+            <img src="@img/admin/cert/image-4.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg" id="certImg_5" hidden>
+          <label for="certImg_5">
+            <img src="@img/admin/cert/image-5.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg" id="certImg_6" hidden>
+          <label for="certImg_6">
+            <img src="@img/admin/cert/image-3.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg" id="certImg_7" hidden>
+          <label for="certImg_7">
+            <img src="@img/admin/cert/image-4.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+        <div class="swiper-slide certSlide">
+          <input type="radio" name="certImg" id="certImg_8" hidden>
+          <label for="certImg_8">
+            <img src="@img/admin/cert/image-5.png" alt="image">
+          </label>
+        </div><!-- /certSlide -->
+
+      </div>
+    </div>
+
+    <div class="text-uppercase mt-4 mt-lg-3 mb-4 text--gray">
+      ВЫБЕРИТЕ НОМИНАЛ ИЛИ ВВЕДИТЕ СУММУ
+    </div>
+
+    <div class="d-flex gap-3 flex-wrap mb-4">
+      <div class="inputRect">
+        <input type="radio" id="sum_1" name="sum" hidden checked>
+        <label class="text-center text--sm" for="sum_1">
+          <span>10 000 р. </span>
+        </label>
+      </div>
+      <div class="inputRect">
+        <input type="radio" id="sum_2" name="sum" hidden>
+        <label class="text-center text--sm" for="sum_2">
+          <span>20 000 р. </span>
+        </label>
+      </div>
+      <div class="inputRect">
+        <input type="radio" id="sum_3" name="sum" hidden>
+        <label class="text-center text--sm" for="sum_3">
+          <span>40 000 р. </span>
+        </label>
+      </div>
+      <div class="inputRect">
+        <input type="radio" id="sum_4" name="sum" hidden>
+        <label class="text-center text--sm" for="sum_4">
+          <span>100 000 р. </span>
+        </label>
+      </div>
+    </div>
+
+    <div class="mb-2 mb-lg-4">Ваш номинал</div>
+    <div class="inputW mb-4">
+      <input type="text" class="formInput" placeholder="Введите стоимость номинала" value="1 - 500 000 р.">
+    </div>
+
+    <div class="d-flex justify-content-between gap-3 flex-wrap">
+      <span>Итого</span>
+      <span>100 000 р.</span>
+    </div>
+
+    <button class="button button--gray certBtn w-100">
+      Купить сертификат
+    </button>
+    <!-- <button class="button button--black certBtn w-100">
+      Купить сертификат
+    </button> -->
+
+    <div class="py-4 border-t-gray border-b-gray text--sm mt-4">
+      <p>Сертификат CODEFIVE — самый легкий способ подарить вашему близкому человеку именно то, о чем он мечтал. Можно
+        оформить сертификат онлайн или купить в магазине — какой бы формат вы ни выбрали, он будет действителен для
+        оплаты покупок на сайте, в приложении и розничной сети CODEFIVE.</p>
+    </div>
+
+    <button class="py-3 border-b-gray w-100 text-start d-flex justify-content-between align-items-center" data-fancybox
+      data-src="#modalCert">
+      Условия использования
+      <img src="@img/icons/arrow-right.svg" alt="arrow">
+    </button>
+
+  </div>
+</section>

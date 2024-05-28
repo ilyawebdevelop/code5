@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Code5 — Страницы</title>
+	<link rel="shortcut icon" href="dist/img/favicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+	<style media="screen">
+		body {
+			background: #fff;
+			padding: 0 0 50px;
+			font-family: sans-serif;
+			font-size: 16px;
+			color: #333;
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		ul,
+		ol {
+			margin: 0 0 15px;
+		}
+
+		h3 {
+			font-size: 18px;
+		}
+
+		.container {
+			max-width: 1170px;
+			padding: 0 15px;
+			margin: 0 auto;
+		}
+
+		.title {
+			padding: 16px 0 1px;
+			margin-bottom: 40px;
+			background: #0039A6;
+			border-bottom: 1px solid #eaeaea;
+			color: #fff;
+		}
+
+		.boxes {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -15px -40px;
+		}
+
+		.box {
+			flex: 1 0 0;
+			min-width: 30%;
+			padding: 0 15px 40px;
+		}
+
+		.box ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.box ul li {
+			margin-bottom: 15px;
+		}
+
+		.box ul li:last-child {
+			margin-bottom: 0;
+		}
+
+		.box ul a {
+			display: inline-block;
+			text-decoration: underline;
+			color: #000;
+		}
+
+		.box ul a:hover {
+			text-decoration: none;
+		}
+
+		.box ul a:visited {
+			color: #681DA8;
+		}
+
+		.develop li a {
+			pointer-events: none;
+		}
+
+		@media only screen and (max-width : 767px) {
+			.box {
+				min-width: 50%;
+			}
+		}
+
+		@media only screen and (max-width : 575px) {
+			.box {
+				min-width: 100%;
+			}
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+	<div class="title">
+		<div class="container">
+			<h2>Code5</h2>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="boxes">
+
+			<div class="box">
+				<!-- <h3>Для посетителя мобильная</h3> -->
+				<ul>
+					<li><a href="dist/model.html">Главная</a></li>
+					<li><a href="dist/brand.html">Автомобили</a></li>
+					<li><a href="dist/index.html">Главная</a></li>
+					<li><a href="dist/live.html">Faker Live</a></li>
+					<li><a href="dist/services.html">Услуги</a></li>
+					<li><a href="dist/service.html">Прием на комиссию</a></li>
+					<li><a href="dist/history.html">Наша история</a></li>
+					<!-- <div class="develop">
+						<h3>Очень скоро</h3>
+						<ul>
+							<li>
+								<a href="#">О бренде ( В разработке)</a>
+							</li>
+						</ul>
+					</div> -->
+				</ul>
+			</div>
+			<div class="box">
+				<!-- <h3>Для админа Десктоп</h3> -->
+				<ul>
+					<!-- <li><a href="dist/admin.html">Авторизация</a></li>
+					<li><a href="dist/admin-reset-password.html">Сброс пароля</a></li>
+					<li><a href="dist/admin-reset-modal.html">Сброс пароля + модалка письмо отправлено</a></li>
+					<li><a href="dist/admin-password-changed-modal.html">Сброс пароля + модалка пароль изменен</a></li>
+					<li><a href="dist/admin-activity.html">Дашборд активности</a></li>
+					<li><a href="dist/admin-preview-table.html">Посмотреть столик</a></li>
+					<li><a href="dist/admin-history.html">История заказов</a></li>
+					<li><a href="dist/admin-personal-list.html">Персонал</a></li>
+					<li><a href="dist/admin-personal-stat.html">Статистика по сотруднику</a></li>
+					<li><a href="dist/admin-personal-edit.html">Редактировать сотрудника</a></li>
+					<li><a href="dist/admin-menu.html">Меню</a></li>
+					<li><a href="dist/admin-menu-add.html">Добавить блюдо</a></li>
+					<li><a href="dist/admin-menu-add-stop.html">Добавить блюдо в стоп-лист</a></li>
+					<li><a href="dist/admin-menu-add-filled.html">Добавить блюдо заполнены поля</a></li>
+					<li><a href="dist/admin-about.html">О нас </a></li>
+					<li><a href="dist/admin-reviews.html">Отзывы </a></li>
+					<li><a href="dist/admin-news.html">Новости и акции </a></li>
+					<li><a href="dist/admin-news-add.html">Создать новость </a></li>
+					<li><a href="dist/admin-news-add-date.html">Создать новость дата</a></li>
+					<li><a href="dist/admin-news-edit.html">Редактировать новость</a></li>
+					<li><a href="dist/admin-main-slider.html">Главный слайдер</a></li>
+					<li><a href="dist/admin-main-slider-add.html">Добавить фото</a></li>
+					<li><a href="dist/admin-main-slider-edit.html">Редактировать фото</a></li>
+					<li><a href="dist/admin-guest.html">Гости</a></li>
+					<li><a href="dist/admin-guest-card.html">Карточка пользователя </a></li>
+					<li><a href="dist/admin-guest-card-edit.html">Редактирование пользователя </a></li>
+					<li><a href="dist/admin-guest-card-history.html">История изменений профиля </a></li>
+					<li><a href="dist/admin-stat.html">Статистика </a></li>
+					<li><a href="dist/admin-settings.html">Настройки системы </a></li>
+					<li><a href="dist/admin-profile.html">Профиль </a></li>
+					<li><a href="dist/admin-profile-history.html">История входа в аккаунт </a></li> -->
+
+
+					<br>
+
+					<!-- 
+					<li><a href="popups.html">Модальные окна</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+</html>

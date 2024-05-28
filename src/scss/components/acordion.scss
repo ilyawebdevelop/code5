@@ -1,0 +1,109 @@
+.accordion {
+  border: none;
+  box-shadow: none;
+}
+.accordion-button {
+  padding-left: 0;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  font-weight: 300;
+  @media(max-width: 991px){
+    justify-content: space-between;
+    padding-right: 0;
+  }
+  @media(max-width: 767px){
+    font-size: 16px;
+  }
+  &:focus {
+    box-shadow: none;
+    border-color: transparent;
+  }
+}
+.accordion-body{
+  padding-left: 0;
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+.accordion-item:first-of-type {
+  border-radius: 0;
+  @media(max-width: 991px){
+    border-top: 1px solid #000;
+    padding-top: 8px;
+  }
+}
+.accordion-item:last-of-type {
+  border-radius: 0;
+}
+
+.accordion-item:first-of-type .accordion-button{
+  border-radius: 0;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background-color: transparent;
+  color: #1a1a1a;
+}
+.accordion-item {
+  border: none;
+  margin-bottom: 12px;
+  @media(max-width: 991px){
+    border-bottom: 1px solid #000;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+  }
+}
+.accordion-button::after {
+  margin-left: 13px;
+  @media(max-width: 991px){
+    transform: rotate(-90deg);
+  }
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.faq {
+  .accordion-item {
+    border-bottom: none;
+    border-top: none;
+    @media(max-width: 767px){
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .accordion-button::after {
+    transform: rotate(0);
+  }
+  .accordion-button:not(.collapsed)::after {
+    transform: rotate(-180deg);
+  }
+}
+.accordionProfile{
+  margin-bottom: 25px;
+  @media(max-width: 767px){
+    margin-bottom: 10px;
+  }
+  .accordion-button{
+    justify-content: flex-start;
+    border-top: none;
+    border-bottom: none;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .accordion-imte {
+    border-top: none;
+    border-bottom: none;
+  }
+  .accordion-item:first-of-type {
+    border-top: none;
+    border-bottom: none;
+  }
+  .accordion-button::after {
+    margin-left: 13px;
+    transform: rotate(0deg);  
+  }
+  .accordion-button:not(.collapsed)::after {
+    transform: rotate(-180deg);  
+  }
+}
