@@ -16460,6 +16460,10 @@ a.boardText:hover {
   font-size: 16px;
 }
 
+.headerSearchBtn {
+  cursor: pointer;
+}
+
 /* Hamburger Menu */
 .hamburger {
   align-self: center;

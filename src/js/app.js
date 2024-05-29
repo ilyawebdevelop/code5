@@ -52,9 +52,13 @@ document.querySelectorAll('.productSlider').forEach(n => {
 document.querySelectorAll('.productCard').forEach(n => {
   const mySwiperProductCard = new Swiper(n.querySelector('.productCardSlider'), {
     slidesPerView: 1,
-    speed: 800,
+    speed: 700,
     spaceBetween: 10,
     effect: 'fade',
+    autoplay: {
+      delay: 1000,
+    },
+    disableOnInteraction: true,
     fadeEffect: {
       crossFade: true
     },
@@ -63,7 +67,13 @@ document.querySelectorAll('.productCard').forEach(n => {
       clickable: true,
       type: 'bullets',
     },
-  });
+  });  
+  mySwiperProductCard.autoplay.stop(), n.addEventListener("mouseover", (function () {
+    mySwiperProductCard.autoplay.start()
+
+  })), n.addEventListener("mouseout", (function () {
+    mySwiperProductCard.autoplay.stop()
+  }));
 });
 
 var slider = document.getElementById('slider');
@@ -343,7 +353,6 @@ if (mediaQuery991.matches) {
 
 }
 
-
 $(window).scroll(function () {
   if ($(this).scrollTop() > 185) {
     $('.header').addClass('fixed-on');
@@ -352,3 +361,21 @@ $(window).scroll(function () {
     $('.header').removeClass('fixed-on');
   }
 });
+
+
+// let productCardEach = document.querySelectorAll('.productCard');
+// productCardEach.forEach(el => {
+//   el.addEventListener(
+//     "mouseenter",
+//     (event) => {
+//       // highlight the mouseenter target
+//       event.target.style.color = "purple";
+//       console.log('123');
+//       // reset the color after a short delay
+//       setTimeout(() => {
+//         console.log('456');
+//       }, 500);
+//     },
+//     false,
+//   );
+// });
