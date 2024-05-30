@@ -17915,9 +17915,6 @@ a.boardText:hover {
 
 .baner {
   height: 110vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
