@@ -17918,6 +17918,12 @@ a.boardText:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-color: transparent;
+  border-style: solid;
 }
 @media (max-width: 767px) {
   .baner {
