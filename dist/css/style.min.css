@@ -17600,6 +17600,8 @@ a.boardText:hover {
 }
 .productRow--gray {
   color: #414246;
+  border-bottom: 1px dashed #414246;
+  width: fit-content;
 }
 @media (max-width: 1400px) {
   .productRow.text--lg {

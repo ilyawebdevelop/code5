@@ -244,6 +244,8 @@
 
     &--gray {
       color: #414246;
+      border-bottom: 1px dashed #414246;
+      width: fit-content;
     }
 
     &.text--lg {

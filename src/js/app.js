@@ -363,19 +363,12 @@ $(window).scroll(function () {
 });
 
 
-// let productCardEach = document.querySelectorAll('.productCard');
-// productCardEach.forEach(el => {
-//   el.addEventListener(
-//     "mouseenter",
-//     (event) => {
-//       // highlight the mouseenter target
-//       event.target.style.color = "purple";
-//       console.log('123');
-//       // reset the color after a short delay
-//       setTimeout(() => {
-//         console.log('456');
-//       }, 500);
-//     },
-//     false,
-//   );
-// });
+// certSlider input checked
+let certSliderLableEach = document.querySelectorAll('.certSlider label');
+let certCardImg = document.querySelector('.certCard img');
+
+certSliderLableEach.forEach(el => {
+  el.addEventListener('click', () => {
+    certCardImg.src = el.dataset.src;
+  });
+});
