@@ -372,3 +372,26 @@ certSliderLableEach.forEach(el => {
     certCardImg.src = el.dataset.src;
   });
 });
+
+let cartList = document.querySelector('.cartList');
+let checkoutBlock = document.querySelector('.checkout');
+let cartOrder = document.querySelector('.cartOrder');
+let cartBack = document.querySelector('.cartBack');
+let cartSmAction = document.querySelector('.cartSmAction');
+let checkoutBtn = document.querySelector('.checkoutBtn');
+
+checkoutBtn?.addEventListener('click', () => {
+  cartList.classList.add('d-none');
+  checkoutBlock.classList.remove('d-none');
+  cartOrder.classList.remove('d-none');
+  cartSmAction.classList.add('d-none');
+  cartBack.classList.remove('d-none');
+});
+
+cartBack?.addEventListener('click', () => {
+  cartList.classList.remove('d-none');
+  checkoutBlock.classList.add('d-none');
+  cartOrder.classList.add('d-none');
+  cartSmAction.classList.remove('d-none');
+  cartBack.classList.add('d-none');
+});

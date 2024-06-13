@@ -1,1113 +1,1137 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" href="img/favicon.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@300;400;500;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.min.css">
-	<title>Корзина</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@300;400;500;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Корзина</title>
 </head>
 
 <body>
 
-	<div class="wrapper">
-		<!-- Header -->
-<header class="header" id="header">
-  <div class="container">
-    <div class="headerW">
-      <a href="/" class="headerLogo logo">
-        <img src="img/admin/logo/logo.svg" alt="logo">
-      </a>
-      <nav class="headerNav">
-        <ul class="d-flex gap-3 gap-lg-2 flex-column flex-lg-row align-items-center align-items-lg-start">
-          <li><a href="#">Каталог</a></li>
-          <li class="has-child">
-            <a href="#">Новинки</a>
-            <ul class="subList">
-              <div class="sublistHeader d-flex gap-3 align-items-center justify-content-between d-lg-none mb-4">
-                <button class="sublistReturn">
-                  <svg class="t_submenu__close-icon" width="26px" height="26px" viewBox="0 0 26 26"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10.4142136,5 L11.8284271,6.41421356 L5.829,12.414 L23.4142136,12.4142136 L23.4142136,14.4142136 L5.829,14.414 L11.8284271,20.4142136 L10.4142136,21.8284271 L2,13.4142136 L10.4142136,5 Z"
-                      fill="#000000"></path>
-                  </svg>
-                </button>
-                Одежда
-              </div>
-              <li><a href="#">Новинки</a></li>
-              <li class="has-subcat">
-                <a href="#">Одежда</a>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="headerW">
+          <a href="/" class="headerLogo logo">
+            <img src="img/admin/logo/logo.svg" alt="logo">
+          </a>
+          <nav class="headerNav">
+            <ul class="d-flex gap-3 gap-lg-2 flex-column flex-lg-row align-items-center align-items-lg-start">
+              <li><a href="#">Каталог</a></li>
+              <li class="has-child">
+                <a href="#">Новинки</a>
                 <ul class="subList">
-                  <li><a href="#">Верхняя одежда</a></li>
-                  <li><a href="#">Джинсы</a></li>
-                  <li><a href="#">Вязанный трикотаж</a></li>
-                  <li><a href="#">Жакеты</a></li>
-                  <li><a href="#">Брюки</a></li>
-                  <li><a href="#">Юбки</a></li>
-                  <li><a href="#">Рубашки/Блузки</a></li>
-                  <li><a href="#">Комбинезоны</a></li>
-                  <li><a href="#">Топы/Майки</a></li>
+                  <div class="sublistHeader d-flex gap-3 align-items-center justify-content-between d-lg-none mb-4">
+                    <button class="sublistReturn">
+                      <svg class="t_submenu__close-icon" width="26px" height="26px" viewBox="0 0 26 26"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.4142136,5 L11.8284271,6.41421356 L5.829,12.414 L23.4142136,12.4142136 L23.4142136,14.4142136 L5.829,14.414 L11.8284271,20.4142136 L10.4142136,21.8284271 L2,13.4142136 L10.4142136,5 Z"
+                          fill="#000000"></path>
+                      </svg>
+                    </button>
+                    Одежда
+                  </div>
+                  <li><a href="#">Новинки</a></li>
+                  <li class="has-subcat">
+                    <a href="#">Одежда</a>
+                    <ul class="subList">
+                      <li><a href="#">Верхняя одежда</a></li>
+                      <li><a href="#">Джинсы</a></li>
+                      <li><a href="#">Вязанный трикотаж</a></li>
+                      <li><a href="#">Жакеты</a></li>
+                      <li><a href="#">Брюки</a></li>
+                      <li><a href="#">Юбки</a></li>
+                      <li><a href="#">Рубашки/Блузки</a></li>
+                      <li><a href="#">Комбинезоны</a></li>
+                      <li><a href="#">Топы/Майки</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Аксессуары</a></li>
+                  <li class="has-subcat">
+                    <a href="#">Обувь</a>
+                    <ul class="subList">
+                      <li><a href="#">Юбки</a></li>
+                      <li><a href="#">Рубашки/Блузки</a></li>
+                      <li><a href="#">Комбинезоны</a></li>
+                      <li><a href="#">Топы/Майки</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Premium</a></li>
+                  <li><a href="#">Эксклюзив</a></li>
                 </ul>
               </li>
-              <li><a href="#">Аксессуары</a></li>
-              <li class="has-subcat">
-                <a href="#">Обувь</a>
-                <ul class="subList">
-                  <li><a href="#">Юбки</a></li>
-                  <li><a href="#">Рубашки/Блузки</a></li>
-                  <li><a href="#">Комбинезоны</a></li>
-                  <li><a href="#">Топы/Майки</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Premium</a></li>
-              <li><a href="#">Эксклюзив</a></li>
-            </ul>
-          </li>
-          <li class="has-child">
-            <a href="#">Покупателям</a>
+              <li class="has-child">
+                <a href="#">Покупателям</a>
 
-            <ul class="subList subList--wide">
-              <div class="sublistHeader d-flex gap-3 align-items-center justify-content-between d-lg-none mb-4">
-                <button class="sublistReturn">
-                  <svg class="t_submenu__close-icon" width="26px" height="26px" viewBox="0 0 26 26"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10.4142136,5 L11.8284271,6.41421356 L5.829,12.414 L23.4142136,12.4142136 L23.4142136,14.4142136 L5.829,14.414 L11.8284271,20.4142136 L10.4142136,21.8284271 L2,13.4142136 L10.4142136,5 Z"
-                      fill="#000000"></path>
-                  </svg>
-                </button>
-                Покупателям
-              </div>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Возврат</a></li>
-              <li><a href="#">Вопросы и ответы</a></li>
+                <ul class="subList subList--wide">
+                  <div class="sublistHeader d-flex gap-3 align-items-center justify-content-between d-lg-none mb-4">
+                    <button class="sublistReturn">
+                      <svg class="t_submenu__close-icon" width="26px" height="26px" viewBox="0 0 26 26"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.4142136,5 L11.8284271,6.41421356 L5.829,12.414 L23.4142136,12.4142136 L23.4142136,14.4142136 L5.829,14.414 L11.8284271,20.4142136 L10.4142136,21.8284271 L2,13.4142136 L10.4142136,5 Z"
+                          fill="#000000"></path>
+                      </svg>
+                    </button>
+                    Покупателям
+                  </div>
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Возврат</a></li>
+                  <li><a href="#">Вопросы и ответы</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Документы</a></li>
+                  <li><a href="#">Подарочный сертификат</a></li>
+                  <div class="socials">
+                    Мы в соц. сетях:
+                    <div class="socialsList d-flex gap-3">
+                      <div>
+                        <a href="#" target="_blank">
+                          <img src="img/admin/socials/image-1.svg" alt="icon">
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#" target="_blank">
+                          <img src="img/admin/socials/image-2.svg" alt="icon">
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#" target="_blank">
+                          <img src="img/admin/socials/image-3.svg" alt="icon">
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#" target="_blank">
+                          <img src="img/admin/socials/image-4.svg" alt="icon">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+
+              </li>
+              <li><a href="#">О Нас</a></li>
+              <li><a href="#">Где купить</a></li>
+              <li><a href="#">Блог</a></li>
               <li><a href="#">Контакты</a></li>
-              <li><a href="#">Документы</a></li>
-              <li><a href="#">Подарочный сертификат</a></li>
-              <div class="socials">
-                Мы в соц. сетях:
-                <div class="socialsList d-flex gap-3">
-                  <div>
-                    <a href="#" target="_blank">
-                      <img src="img/admin/socials/image-1.svg" alt="icon">
-                    </a>
-                  </div>
-                  <div>
-                    <a href="#" target="_blank">
-                      <img src="img/admin/socials/image-2.svg" alt="icon">
-                    </a>
-                  </div>
-                  <div>
-                    <a href="#" target="_blank">
-                      <img src="img/admin/socials/image-3.svg" alt="icon">
-                    </a>
-                  </div>
-                  <div>
-                    <a href="#" target="_blank">
-                      <img src="img/admin/socials/image-4.svg" alt="icon">
-                    </a>
-                  </div>
-                </div>
-              </div>
             </ul>
+            <div class="headerLang d-flex justify-content-center d-lg-none mt-4">
+              <select name="langSelect" id="langSelect">
+                <option value="1">RU/ENG</option>
+                <option value="1">RU</option>
+                <option value="2">ENG</option>
+              </select>
+            </div>
+          </nav>
+          <div class="d-flex align-items-center headerAction">
+            <div class="d-flex headerActionIcons">
+              <a class="headerSearchBtn" href="#">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#search"></use>
+                </svg>
+              </a>
+              <a class="headerActionItemCount" href="#" data-count="2">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#heart"></use>
+                </svg>
+              </a>
+              <a class="headerActionItemCount" href="#" data-count="30">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#cart"></use>
+                </svg>
+              </a>
+              <a class="headerActionItemPerson" href="#">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#person"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="hamburger" id="toggle">
+              <div class="top-bun"></div>
+              <div class="meat"></div>
+              <div class="bottom-bun"></div>
+            </div><!-- /Hamburger Menu -->
+            <div class="headerLang d-none d-lg-block">
+              <select name="langSelect" id="langSelect">
+                <option value="1">RU/ENG</option>
+                <option value="1">RU</option>
+                <option value="2">ENG</option>
+              </select>
+            </div>
+          </div>
+          <div class="headerSearch">
+            <div class="container">
+              <div class="headerSearchW">
+                <input type="search" placeholder="Поиск">
+                <button class="headerSearchSubmit">
+                  <img src="img/icons/search-gray.svg" alt="icon">
+                </button>
+                <button class="headerSearchClose">
+                  <img src="img/icons/close.svg" alt="icon">
+                </button>
+              </div>
 
-          </li>
-          <li><a href="#">О Нас</a></li>
-          <li><a href="#">Где купить</a></li>
-          <li><a href="#">Блог</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <div class="headerLang d-flex justify-content-center d-lg-none mt-4">
-          <select name="langSelect" id="langSelect">
-            <option value="1">RU/ENG</option>
-            <option value="1">RU</option>
-            <option value="2">ENG</option>
-          </select>
-        </div>
-      </nav>
-      <div class="d-flex align-items-center headerAction">
-        <div class="d-flex headerActionIcons">
-          <a class="headerSearchBtn" href="#">
-            <svg>
-              <use xlink:href="img/icons/icons.svg#search"></use>
-            </svg>
-          </a>
-          <a class="headerActionItemCount" href="#" data-count="2">
-            <svg>
-              <use xlink:href="img/icons/icons.svg#heart"></use>
-            </svg>
-          </a>
-          <a class="headerActionItemCount" href="#" data-count="30">
-            <svg>
-              <use xlink:href="img/icons/icons.svg#cart"></use>
-            </svg>
-          </a>
-          <a class="headerActionItemPerson" href="#">
-            <svg>
-              <use xlink:href="img/icons/icons.svg#person"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="hamburger" id="toggle">
-          <div class="top-bun"></div>
-          <div class="meat"></div>
-          <div class="bottom-bun"></div>
-        </div><!-- /Hamburger Menu -->
-        <div class="headerLang d-none d-lg-block">
-          <select name="langSelect" id="langSelect">
-            <option value="1">RU/ENG</option>
-            <option value="1">RU</option>
-            <option value="2">ENG</option>
-          </select>
+            </div>
+
+          </div>
         </div>
       </div>
-      <div class="headerSearch">
+    </header>
+
+
+    <main class="main">
+      <section class="sect p-0">
         <div class="container">
-          <div class="headerSearchW">
-            <input type="search" placeholder="Поиск">
-            <button class="headerSearchSubmit">
-              <img src="img/icons/search-gray.svg" alt="icon">
-            </button>
-            <button class="headerSearchClose">
-              <img src="img/icons/close.svg" alt="icon">
-            </button>
+          <div class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="/">Главная </a>
+              </li>
+              <li>
+                <span>Каталог</span>
+              </li>
+            </ul>
           </div>
-
         </div>
+      </section>
+      <section class="sect cart pt-0">
+        <div class="container">
+          <h1 class="cartTitle d-none d-xl-block">Оформление заказа</h1>
+          <div class="row">
+            <div class="col-xl-8">
+              <div class="textLink cartBack d-none">Назад</div>
+              <div class="cartList">
 
+                <div class="cartItem">
+                  <a href="#" class="cartItemImg d-block d-xl-none"><img src="img/admin/product/image-1.jpg"
+                      alt="image"></a>
+                  <div class="d-flex flex-column flex-xl-row justify-content-start justify-content-xl-between w-100">
+                    <div class="cartItemL">
+                      <a href="#" class="cartItemImg d-none d-xl-block"><img src="img/admin/product/image-1.jpg"
+                          alt="image"></a>
+                      <div class="cartItemContent">
+                        <div class="cartItemSku">сf 001</div>
+                        <div class="d-flex gap-4 align-items-start align-items-xl-center flex-column flex-xl-row">
+                          <a href="#" class="cartItemTitle">Платье шелковое</a>
+                          <div class="cartItemColor cartItemColor--gray"></div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="cartItemC">
+                      <div class="productQuantityWrapper">
+                        <div class="productQuantity d-flex">
+                          <button class="productQuantityItem productQuantityItemMinus" type="button"
+                            onclick="this.nextElementSibling.stepDown();">
+                            -
+                          </button>
+                          <input type="number" step="1" min="1" name="" value="1" title="Кол-во" inputmode="numeric"
+                            autocomplete="off">
+                          <button class="productQuantityItem productQuantityItemPlus" type="button"
+                            onclick="this.previousElementSibling.stepUp();">
+                            +
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cartItemR">
+                      <div class="d-flex gap-2 align-items-center">
+                        <span class="cartItemPrice">95 000 р.</span>
+                        <button class="cartItemRemove d-none d-xl-flex">+</button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="cartItemRemove d-flex d-xl-none">+</button>
+
+                </div><!-- /cartItem -->
+
+                <div class="cartItem">
+                  <a href="#" class="cartItemImg d-block d-xl-none"><img src="img/admin/product/image-2.jpg"
+                      alt="image"></a>
+                  <div class="d-flex flex-column flex-xl-row justify-content-start justify-content-xl-between w-100">
+                    <div class="cartItemL">
+                      <a href="#" class="cartItemImg d-none d-xl-block"><img src="img/admin/product/image-2.jpg"
+                          alt="image"></a>
+                      <div class="cartItemContent">
+                        <div class="cartItemSku">сf 001</div>
+                        <div class="d-flex gap-4 align-items-start align-items-xl-center flex-column flex-xl-row">
+                          <a href="#" class="cartItemTitle">Платье уверенной шикарное Платье шелковое</a>
+                          <div class="cartItemColor cartItemColor--gray"></div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="cartItemC">
+                      <div class="productQuantityWrapper">
+                        <div class="productQuantity d-flex">
+                          <button class="productQuantityItem productQuantityItemMinus" type="button"
+                            onclick="this.nextElementSibling.stepDown();">
+                            -
+                          </button>
+                          <input type="number" step="1" min="1" name="" value="1" title="Кол-во" inputmode="numeric"
+                            autocomplete="off">
+                          <button class="productQuantityItem productQuantityItemPlus" type="button"
+                            onclick="this.previousElementSibling.stepUp();">
+                            +
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cartItemR">
+                      <div class="d-flex gap-2 align-items-center">
+                        <span class="cartItemPrice">295 000 р.</span>
+                        <button class="cartItemRemove d-none d-xl-flex">+</button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="cartItemRemove d-flex d-xl-none">+</button>
+
+                </div><!-- /cartItem -->
+
+              </div>
+              <div class="checkout d-none d-xl-block">
+                <div class="cartRow d-flex gap-4">
+                  <div class="cartRowL">
+                    <span class="cartRowName">E-mail</span>
+                  </div>
+                  <div class="cartRowR">
+                    <input type="email" class="formInput">
+                    <div class="agreement mt-3">
+                      <input id="emailAgree" type="checkbox" checked hidden>
+                      <label class="d-flex gap-3" for="emailAgree">
+                        <div class="rect"></div>
+                        <p class="agreementText">
+                          Хочу получать новости и узнавать о специальных предложениях в числе первых
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="cartRow d-flex gap-4">
+                  <div class="cartRowL">
+                    <span class="cartRowName">Имя</span>
+                  </div>
+                  <div class="cartRowR">
+                    <input type="text" class="formInput">
+                  </div>
+                </div>
+                <div class="cartRow d-flex gap-4">
+                  <div class="cartRowL">
+                    <span class="cartRowName">Фамилия</span>
+                  </div>
+                  <div class="cartRowR">
+                    <input type="text" class="formInput">
+                  </div>
+                </div>
+                <div class="cartRow d-flex gap-4">
+                  <div class="cartRowL">
+                    <span class="cartRowName">Телефон</span>
+                  </div>
+                  <div class="cartRowR">
+                    <input type="tel" class="formInput" placeholder="+7" value="+7">
+                  </div>
+                </div>
+                <div class="delivery cartRow d-flex gap-4">
+                  <div class="cartRowL">
+                    <span class="cartRowName">Способ доставки</span>
+                  </div>
+                  <div class="cartRowR">
+                    <div class="radioW">
+                      <input type="radio" name="delivery" id="del_1" hidden checked>
+                      <label for="del_1">
+                        <div class="round"></div>
+                        <p>
+                          Курьер - 1000 р.
+                        </p>
+                      </label>
+                    </div>
+                    <div class="radioWRight">
+                      <p class="mb-4 mt-4 text--sm">
+                        Вы можете примерить покупки и купить только то, что понравится. Эта опция доступна при оплате
+                        курьеру.
+                      </p>
+                      <p class="mb-4 mt-4 text--sm">
+                        Когда заказ будет передан в курьерскую службу, мы пришлем вам СМС со ссылкой — по ней вы сможете
+                        изменить день или выбрать удобное время доставки. 
+                        <a class="textLink" href="#" data-fancybox data-src="#modalCart">Подробнее</a>
+                      </p>
+                    </div>
+
+                    <div class="radioW">
+                      <input type="radio" name="delivery" id="del_2" hidden>
+                      <label for="del_2">
+                        <div class="round"></div>
+                        <p>
+                          Воспользоваться сервисом доставки СДЭК
+                        </p>
+                      </label>
+                    </div>
+                    <div class="radioWRight">
+                      <a class="textLink text--sm text-uppercase mt-3 mb-1" href="#">ВЫБРАТЬ ПУНКТ ВЫДАЧИ</a>
+                      <p class="mb-4 text--sm">
+                        Срок хранения заказа — 14 дней. Для получения понадобится паспорт. Если выбранный пункт
+                        переполнен,
+                        перевозчик может изменить его на ближайший. Следить за статусом доставки можно на сайте
+                        Boxberry.
+                        Сейчас сроки доставки могут быть увеличены. Приносим извинения и скоро вернемся к привычным
+                        срокам.
+                      </p>
+                    </div>
+
+                    <div class="radioW">
+                      <input type="radio" name="delivery" id="del_3" hidden>
+                      <label for="del_3">
+                        <div class="round"></div>
+                        <p>
+                          Самовывоз из Шоурума <span class="fw-regular">- бесплатно</span>
+                        </p>
+                      </label>
+                    </div>
+                    <div class="radioWRight">
+                      <p class="mt-4 text--sm">
+                        Срок хранения заказа в магазине — 5 дней
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="cartRow d-flex gap-4">
+                  <div class="cartRowL">
+                    <span class="cartRowName">Улица</span>
+                  </div>
+                  <div class="cartRowR">
+                    <input type="text" class="formInput">
+                    <div class="d-flex gap-3 mt-3">
+                      <div class="d-block w-50">
+                        <div class="mb-1">Дом</div>
+                        <input type="text" class="formInput">
+                      </div>
+                      <div class="d-block w-50">
+                        <div class="mb-1">Квартира/офис</div>
+                        <input type="text" class="formInput">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="payment cartRow d-flex gap-4 mt-4">
+                  <div class="cartRowL">
+                    <span class="cartRowName">Варианты оплаты</span>
+                  </div>
+                  <div class="cartRowR">
+                    <div class="radioW">
+                      <input type="radio" name="payment" id="payment_1" hidden checked>
+                      <label for="payment_1">
+                        <div class="round"></div>
+                        <p>
+                          Банковской картой
+                        </p>
+                      </label>
+                    </div>
+                    <div class="radioWRight">
+                      <p class="mb-4 text--sm">
+                        Пожалуйста, оплатите заказ в течение 120 минут.
+                        При оплате онлайн недоступна опция примерки
+                        и частичного выкупа.
+                      </p>
+                    </div>
+
+                    <div class="radioW">
+                      <input type="radio" name="payment" id="payment_2" hidden>
+                      <label for="payment_2">
+                        <div class="round"></div>
+                        <p>
+                          Оплата долями - 4 платежа по 78 000 р.
+                        </p>
+                      </label>
+                    </div>
+                    <div class="radioWRight">
+                      <p class="mb-4 text--sm">
+                        Сумма разделится на 4 равных платежа — без процентов и комиссий, как обычная оплата картой.
+                        Нажмите
+                        кнопку «Оплатить», чтобы сделать заказ. После этого вы перейдете на страницу сервиса «Долями» и
+                        сможете оформить платеж
+                      </p>
+                    </div>
+                    <div class="cartPaymentGrid">
+                      <div class="modalRassrTableItem active">
+                        <div class="text--lg fw-regular">
+                          Сегодня
+                        </div>
+                        <div class="fw-regular">
+                          78 000 р.
+                        </div>
+                      </div><!-- /modalRassrTableItem -->
+
+                      <div class="modalRassrTableItem">
+                        <div class="text--lg fw-regular">
+                          09 апр.
+                        </div>
+                        <div class="fw-regular">
+                          78 000 р.
+                        </div>
+                      </div><!-- /modalRassrTableItem -->
+
+                      <div class="modalRassrTableItem">
+                        <div class="text--lg fw-regular">
+                          23 апр.
+                        </div>
+                        <div class="fw-regular">
+                          78 000 р.
+                        </div>
+                      </div><!-- /modalRassrTableItem -->
+
+                      <div class="modalRassrTableItem">
+                        <div class="text--lg fw-regular">
+                          07 мая
+                        </div>
+                        <div class="fw-regular">
+                          78 000 р.
+                        </div>
+                      </div><!-- /modalRassrTableItem -->
+                    </div>
+                    <div class="radioW mt-4">
+                      <input type="radio" name="payment" id="payment_3" hidden>
+                      <label for="payment_3">
+                        <div class="round"></div>
+                        <p>
+                          Наличными при получении
+                        </p>
+                      </label>
+                    </div>
+
+
+                  </div>
+                </div>
+
+                <div class="cartRow d-flex gap-4">
+                  <div class="cartRowL">
+                    <span class="cartRowName">Комментарий
+                      для курьера</span>
+                  </div>
+                  <div class="cartRowR">
+                    <textarea name="deliveryText" id="deliveryText" cols="30" rows="10" class="formText w-100"
+                      placeholder="Например, код домофона или номер подъезда"></textarea>
+
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+            <div class="col-xl-4">
+              <div class="cartOrder d-none d-xl-block">
+                <div class="cartOrderContent">
+                  <a href="#" class="cartOrderLink">Войти в личный кабинет</a>
+                  <a href="#" class="cartOrderLink">Условия доставки</a>
+                  <a href="#" class="cartOrderLink" data-fancybox data-src="#modalCart">Условия обмена и возврата</a>
+                  <a href="#" class="cartOrderLink"> Информация об оплате</a>
+                  <a href="#" class="cartOrderLink"> Подарочный сертификат</a>
+                  <div class="d-flex gap-1 mt-4">
+                    <input class="promoInput" type="text" placeholder="Промо-код">
+                    <button class="promoBtn button button--black px-0">ок</button>
+                  </div>
+                </div>
+                <div class="cartOrderFooter">
+                  <div class="d-flex justify-content-between gap-2 mb-4">
+                    <span class="text-uppercase">ДОСТАВКА:</span>
+                    <span>1000 р.</span>
+                  </div>
+                  <div class="d-flex justify-content-between gap-2 mb-4">
+                    <span class="text-uppercase">ИТОГО:</span>
+                    <span>313 000 р.</span>
+                  </div>
+                  <button class="cartOrderBtn w-100 button button--black">ОПЛАТИТЬ ЗАКАЗ</button>
+                  <div class="cartAgreement">
+                    Нажимая на кнопку «оплатить заказ», я принимаю условия <a href="#" target="_blank">публичной
+                      оферты</a>  и
+                    <a href="#" target="_blank">политики конфиденциальности</a> 
+                  </div>
+                </div>
+              </div>
+              <div class="cartSmAction">
+                <a href="#" class="checkoutLink textLink d-block d-xl-none mt-5 mx-auto mb-5">ВВЕСТИ ПРОМОКОД</a>
+                <button class="button button--lg button--black w-100 d-flex d-xl-none checkoutBtn mt-5">ОФОРМИТЬ
+                  ЗАКАЗ</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footerW">
+          <div class="footerL">
+            <a href="/" class="footerLogo logo">
+              <img src="img/admin/logo/logo-white.svg" alt="logo">
+            </a>
+            <nav class="footerNav">
+              <ul>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Возврат</a></li>
+                <li><a href="#">Вопросы и ответы</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Документы</a></li>
+              </ul>
+            </nav>
+          </div>
+          <p class="footerText">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
+            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
+            коллекцию
+            размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно
+            пережил
+            без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+            послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время,
+            программы
+            электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+          </p>
+          <div class="footerSocials socials">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="img/admin/socials/telegram.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/admin/socials/youtube.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/admin/socials/dzen.svg" alt="icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- modal -->
+    <!-- order -->
+    <div class="modal" id="modalOrder">
+
+      <div class="modalHead">
+        <h2 class="h2">Оставьте заявку</h2>
+        <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent">
+        <p class="modalDescr">
+          Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
+        </p>
+        <div class="modalForm">
+          <div class="inputW">
+            <input type="text" class="formInput" placeholder="Как вас зовут?">
+          </div>
+          <div class="inputW">
+            <input type="tel" class="formInput" placeholder="+7 (___) ___-__-__" inputmode="text">
+          </div>
+          <button class="button button--blue formBtn">
+            Отправить заявку
+          </button>
+          <div class="agreement">
+            <p>
+              Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</header>
 
+    <!-- rassrochka -->
+    <div class="modal" id="modalRassr">
 
-		<main class="main">
-			<section class="sect p-0">
-  <div class="container">
-    <div class="breadcrumbs">
-      <ul>
-        <li>
-          <a href="/">Главная </a>
-        </li>
-        <li>
-          <span>Каталог</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-			<section class="sect cart pt-0">
-  <div class="container">
-    <h1 class="cartTitle d-none d-xl-block">Оформление заказа</h1>
-    <div class="row">
-      <div class="col-xl-8">
-        <div class="cartList">
-
-          <div class="cartItem">
-            <a href="#" class="cartItemImg d-block d-xl-none"><img src="img/admin/product/image-1.jpg" alt="image"></a>
-            <div class="d-flex flex-column flex-xl-row justify-content-start justify-content-xl-between w-100">
-              <div class="cartItemL">
-                <a href="#" class="cartItemImg d-none d-xl-block"><img src="img/admin/product/image-1.jpg"
-                    alt="image"></a>
-                <div class="cartItemContent">
-                  <div class="cartItemSku">сf 001</div>
-                  <div class="d-flex gap-4 align-items-start align-items-xl-center flex-column flex-xl-row">
-                    <a href="#" class="cartItemTitle">Платье шелковое</a>
-                    <div class="cartItemColor cartItemColor--gray"></div>
-                  </div>
-                </div>
-
-              </div>
-              <div class="cartItemC">
-                <div class="productQuantityWrapper">
-                  <div class="productQuantity d-flex">
-                    <button class="productQuantityItem productQuantityItemMinus" type="button"
-                      onclick="this.nextElementSibling.stepDown();">
-                      -
-                    </button>
-                    <input type="number" step="1" min="1" name="" value="1" title="Кол-во" inputmode="numeric"
-                      autocomplete="off">
-                    <button class="productQuantityItem productQuantityItemPlus" type="button"
-                      onclick="this.previousElementSibling.stepUp();">
-                      +
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="cartItemR">
-                <div class="d-flex gap-2 align-items-center">
-                  <span class="cartItemPrice">95 000 р.</span>
-                  <button class="cartItemRemove d-none d-xl-flex">+</button>
-                </div>
-              </div>
-            </div>
-            <button class="cartItemRemove d-flex d-xl-none">+</button>
-
-          </div><!-- /cartItem -->
-
-          <div class="cartItem">
-            <a href="#" class="cartItemImg d-block d-xl-none"><img src="img/admin/product/image-2.jpg" alt="image"></a>
-            <div class="d-flex flex-column flex-xl-row justify-content-start justify-content-xl-between w-100">
-              <div class="cartItemL">
-                <a href="#" class="cartItemImg d-none d-xl-block"><img src="img/admin/product/image-2.jpg"
-                    alt="image"></a>
-                <div class="cartItemContent">
-                  <div class="cartItemSku">сf 001</div>
-                  <div class="d-flex gap-4 align-items-start align-items-xl-center flex-column flex-xl-row">
-                    <a href="#" class="cartItemTitle">Платье уверенной шикарное Платье шелковое</a>
-                    <div class="cartItemColor cartItemColor--gray"></div>
-                  </div>
-                </div>
-
-              </div>
-              <div class="cartItemC">
-                <div class="productQuantityWrapper">
-                  <div class="productQuantity d-flex">
-                    <button class="productQuantityItem productQuantityItemMinus" type="button"
-                      onclick="this.nextElementSibling.stepDown();">
-                      -
-                    </button>
-                    <input type="number" step="1" min="1" name="" value="1" title="Кол-во" inputmode="numeric"
-                      autocomplete="off">
-                    <button class="productQuantityItem productQuantityItemPlus" type="button"
-                      onclick="this.previousElementSibling.stepUp();">
-                      +
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="cartItemR">
-                <div class="d-flex gap-2 align-items-center">
-                  <span class="cartItemPrice">295 000 р.</span>
-                  <button class="cartItemRemove d-none d-xl-flex">+</button>
-                </div>
-              </div>
-            </div>
-            <button class="cartItemRemove d-flex d-xl-none">+</button>
-
-          </div><!-- /cartItem -->
-
-        </div>
-        <div class="checkout d-none d-xl-block">
-          <div class="cartRow d-flex gap-4">
-            <div class="cartRowL">
-              <span class="cartRowName">E-mail</span>
-            </div>
-            <div class="cartRowR">
-              <input type="email" class="formInput">
-              <div class="agreement mt-3">
-                <input id="emailAgree" type="checkbox" checked hidden>
-                <label class="d-flex gap-3" for="emailAgree">
-                  <div class="rect"></div>
-                  <p class="agreementText">
-                    Хочу получать новости и узнавать о специальных предложениях в числе первых
-                  </p>
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="cartRow d-flex gap-4">
-            <div class="cartRowL">
-              <span class="cartRowName">Имя</span>
-            </div>
-            <div class="cartRowR">
-              <input type="text" class="formInput">
-            </div>
-          </div>
-          <div class="cartRow d-flex gap-4">
-            <div class="cartRowL">
-              <span class="cartRowName">Фамилия</span>
-            </div>
-            <div class="cartRowR">
-              <input type="text" class="formInput">
-            </div>
-          </div>
-          <div class="cartRow d-flex gap-4">
-            <div class="cartRowL">
-              <span class="cartRowName">Телефон</span>
-            </div>
-            <div class="cartRowR">
-              <input type="tel" class="formInput" placeholder="+7" value="+7">
-            </div>
-          </div>
-          <div class="delivery cartRow d-flex gap-4">
-            <div class="cartRowL">
-              <span class="cartRowName">Способ доставки</span>
-            </div>
-            <div class="cartRowR">
-              <div class="radioW">
-                <input type="radio" name="delivery" id="del_1" hidden checked>
-                <label for="del_1">
-                  <div class="round"></div>
-                  <p>
-                    Курьер - 1000 р.
-                  </p>
-                </label>
-              </div>
-              <div class="radioWRight">
-                <p class="mb-4 mt-4 text--sm">
-                  Вы можете примерить покупки и купить только то, что понравится. Эта опция доступна при оплате курьеру.
-                </p>
-                <p class="mb-4 mt-4 text--sm">
-                  Когда заказ будет передан в курьерскую службу, мы пришлем вам СМС со ссылкой — по ней вы сможете
-                  изменить день или выбрать удобное время доставки. 
-                  <a class="textLink" href="#" data-fancybox data-src="#modalCart">Подробнее</a>
-                </p>
-              </div>
-
-              <div class="radioW">
-                <input type="radio" name="delivery" id="del_2" hidden>
-                <label for="del_2">
-                  <div class="round"></div>
-                  <p>
-                    Воспользоваться сервисом доставки СДЭК
-                  </p>
-                </label>
-              </div>
-              <div class="radioWRight">
-                <a class="textLink text--sm text-uppercase mt-3 mb-1" href="#">ВЫБРАТЬ ПУНКТ ВЫДАЧИ</a>
-                <p class="mb-4 text--sm">
-                  Срок хранения заказа — 14 дней. Для получения понадобится паспорт. Если выбранный пункт переполнен,
-                  перевозчик может изменить его на ближайший. Следить за статусом доставки можно на сайте Boxberry.
-                  Сейчас сроки доставки могут быть увеличены. Приносим извинения и скоро вернемся к привычным срокам.
-                </p>
-              </div>
-
-              <div class="radioW">
-                <input type="radio" name="delivery" id="del_3" hidden>
-                <label for="del_3">
-                  <div class="round"></div>
-                  <p>
-                    Самовывоз из Шоурума <span class="fw-regular">- бесплатно</span>
-                  </p>
-                </label>
-              </div>
-              <div class="radioWRight">
-                <p class="mt-4 text--sm">
-                  Срок хранения заказа в магазине — 5 дней
-                </p>
-              </div>
-
-            </div>
-          </div>
-          <div class="cartRow d-flex gap-4">
-            <div class="cartRowL">
-              <span class="cartRowName">Улица</span>
-            </div>
-            <div class="cartRowR">
-              <input type="text" class="formInput">
-              <div class="d-flex gap-3 mt-3">
-                <div class="d-block w-50">
-                  <div class="mb-1">Дом</div>
-                  <input type="text" class="formInput">
-                </div>
-                <div class="d-block w-50">
-                  <div class="mb-1">Квартира/офис</div>
-                  <input type="text" class="formInput">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="payment cartRow d-flex gap-4 mt-4">
-            <div class="cartRowL">
-              <span class="cartRowName">Варианты оплаты</span>
-            </div>
-            <div class="cartRowR">
-              <div class="radioW">
-                <input type="radio" name="payment" id="payment_1" hidden checked>
-                <label for="payment_1">
-                  <div class="round"></div>
-                  <p>
-                    Банковской картой
-                  </p>
-                </label>
-              </div>
-              <div class="radioWRight">
-                <p class="mb-4 text--sm">
-                  Пожалуйста, оплатите заказ в течение 120 минут.
-                  При оплате онлайн недоступна опция примерки
-                  и частичного выкупа.
-                </p>
-              </div>
-
-              <div class="radioW">
-                <input type="radio" name="payment" id="payment_2" hidden>
-                <label for="payment_2">
-                  <div class="round"></div>
-                  <p>
-                    Оплата долями - 4 платежа по 78 000 р.
-                  </p>
-                </label>
-              </div>
-              <div class="radioWRight">
-                <p class="mb-4 text--sm">
-                  Сумма разделится на 4 равных платежа — без процентов и комиссий, как обычная оплата картой. Нажмите
-                  кнопку «Оплатить», чтобы сделать заказ. После этого вы перейдете на страницу сервиса «Долями» и
-                  сможете оформить платеж
-                </p>
-              </div>
-              <div class="cartPaymentGrid">
-                <div class="modalRassrTableItem active">
-                  <div class="text--lg fw-regular">
-                    Сегодня
-                  </div>
-                  <div class="fw-regular">
-                    78 000 р.
-                  </div>
-                </div><!-- /modalRassrTableItem -->
-
-                <div class="modalRassrTableItem">
-                  <div class="text--lg fw-regular">
-                    09 апр.
-                  </div>
-                  <div class="fw-regular">
-                    78 000 р.
-                  </div>
-                </div><!-- /modalRassrTableItem -->
-
-                <div class="modalRassrTableItem">
-                  <div class="text--lg fw-regular">
-                    23 апр.
-                  </div>
-                  <div class="fw-regular">
-                    78 000 р.
-                  </div>
-                </div><!-- /modalRassrTableItem -->
-
-                <div class="modalRassrTableItem">
-                  <div class="text--lg fw-regular">
-                    07 мая
-                  </div>
-                  <div class="fw-regular">
-                    78 000 р.
-                  </div>
-                </div><!-- /modalRassrTableItem -->
-              </div>
-              <div class="radioW mt-4">
-                <input type="radio" name="payment" id="payment_3" hidden>
-                <label for="payment_3">
-                  <div class="round"></div>
-                  <p>
-                    Наличными при получении
-                  </p>
-                </label>
-              </div>
-
-
-            </div>
-          </div>
-
-          <div class="cartRow d-flex gap-4">
-            <div class="cartRowL">
-              <span class="cartRowName">Комментарий
-                для курьера</span>
-            </div>
-            <div class="cartRowR">
-              <textarea name="deliveryText" id="deliveryText" cols="30" rows="10" class="formText w-100"
-                placeholder="Например, код домофона или номер подъезда"></textarea>
-
-            </div>
-          </div>
-
-        </div>
-
-
+      <div class="modalHead modalRassrHead modalHead--between modalHead--flex">
+        <div class="modalRassrHeadEmpty"></div>
+        <img src="img/admin/logo/rassr.svg" alt="logo" class="modalRassrImg">
+        <button data-fancybox-close class="f-button f-button--static is-close-btn" title="Close"><svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
       </div>
-      <div class="col-xl-4">
-        <div class="cartOrder d-none d-xl-block">
-          <div class="cartOrderContent">
-            <a href="#" class="cartOrderLink">Войти в личный кабинет</a>
-            <a href="#" class="cartOrderLink">Условия доставки</a>
-            <a href="#" class="cartOrderLink" data-fancybox data-src="#modalCart">Условия обмена и возврата</a>
-            <a href="#" class="cartOrderLink"> Информация об оплате</a>
-            <a href="#" class="cartOrderLink"> Подарочный сертификат</a>
-            <div class="d-flex gap-1 mt-4">
-              <input class="promoInput" type="text" placeholder="Промо-код">
-              <button class="promoBtn button button--black px-0">ок</button>
-            </div>
+
+      <div class="h1 modalRassrTitle">
+        Оплатите с Долями только 25% стоимости покупки
+      </div>
+
+      <div class="text--lg text-center modalRassrDescr fw-regular">
+        Оставшиеся три платежа спишутся автоматически с шагом в две недели
+      </div>
+
+      <div class="modalContent">
+        <div class="modalRassrTable">
+          <div class="modalRassrTableHead">
+
+            <div class="modalRassrTableItem active">
+              <div class="text--lg fw-regular">
+                25%
+              </div>
+              <div class="fw-regular">
+                Платеж сегодня
+              </div>
+            </div><!-- /modalRassrTableItem -->
+
+            <div class="modalRassrTableItem">
+              <div class="text--lg fw-regular">
+                25%
+              </div>
+              <div class="fw-regular">
+                Через 2 недели
+              </div>
+            </div><!-- /modalRassrTableItem -->
+
+            <div class="modalRassrTableItem">
+              <div class="text--lg fw-regular">
+                25%
+              </div>
+              <div class="fw-regular">
+                Платеж 4 недели
+              </div>
+            </div><!-- /modalRassrTableItem -->
+
+            <div class="modalRassrTableItem">
+              <div class="text--lg fw-regular">
+                25%
+              </div>
+              <div class="fw-regular">
+                Платеж 6 недель
+              </div>
+            </div><!-- /modalRassrTableItem -->
+
           </div>
-          <div class="cartOrderFooter">
-            <div class="d-flex justify-content-between gap-2 mb-4">
-              <span class="text-uppercase">ДОСТАВКА:</span>
-              <span>1000 р.</span>
-            </div>
-            <div class="d-flex justify-content-between gap-2 mb-4">
-              <span class="text-uppercase">ИТОГО:</span>
-              <span>313 000 р.</span>
-            </div>
-            <button class="cartOrderBtn w-100 button button--black">ОПЛАТИТЬ ЗАКАЗ</button>
-            <div class="cartAgreement">
-              Нажимая на кнопку «оплатить заказ», я принимаю условия <a href="#" target="_blank">публичной оферты</a>  и
-              <a href="#" target="_blank">политики конфиденциальности</a> 
-            </div>
+          <div class="modalRassrCheckbox fw-regular">
+            Оплачивайте покупки частями — по 25% каждые
+            две недели
+          </div>
+          <div class="modalRassrCheckbox fw-regular">
+            Никаких дополнительных платежей — как
+            обычная оплата картой
           </div>
         </div>
-        <a href="/checkout.html" class="checkoutLink textLink d-block d-xl-none mt-5 mx-auto mb-5">ВВЕСТИ ПРОМОКОД</a>
-        <a href="/checkout.html" class="button button--lg button--black w-100 checkoutBtn mt-5">ОФОРМИТЬ ЗАКАЗ</a>
+        <div class="modalRassrFooter">
+          Подробную информацию о работе сервиса можно
+          посмотреть на сайте <a href="#">dolyame.ru</a> 
+        </div>
+        <button data-fancybox-close class="button button--100 button--radius button--lg button--black is-close-btn"
+          title="Close">
+          Закрыть
+        </button>
       </div>
     </div>
-  </div>
-</section>
 
-		</main>
-		<!-- Footer -->
-<footer class="footer" id="footer">
-  <div class="container">
-    <div class="footerW">
-      <div class="footerL">
-        <a href="/" class="footerLogo logo">
-          <img src="img/admin/logo/logo-white.svg" alt="logo">
-        </a>
-        <nav class="footerNav">
-          <ul>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Возврат</a></li>
-            <li><a href="#">Вопросы и ответы</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Документы</a></li>
+    <!-- size -->
+    <div class="modal" id="modalSize">
+
+      <div class="modalHead modalHead--flex modalHead--borderB">
+        <button data-fancybox-close class="f-button f-button--static is-close-btn" title="Close"><svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+        <h2 class="modalTitle">Подберите свой точный размер</h2>
+      </div>
+
+      <div class="modalContent">
+        <div class="tabs" data-tabs="popup">
+          <ul class="tabs__nav">
+            <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Таблица размеров</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Обмеры изделия</button></li>
           </ul>
-        </nav>
+          <div class="tabs__content">
+            <div class="tabs__panel">
+              <p class="modalDescr fw-regular">
+                Найдите в таблице параметры, близкие к вашим, чтобы
+                определить свой размер.
+              </p>
+              <div class="modalSizeTable mt-3 mb-3">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>INT</th>
+                      <th>RU</th>
+                      <th>Обхват груди</th>
+                      <th>Обхват талии</th>
+                      <th>Обхват бедер</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>XXS</td>
+                      <td>40</td>
+                      <td>80</td>
+                      <td>60</td>
+                      <td>88</td>
+                    </tr>
+                    <tr>
+                      <td>XS</td>
+                      <td>42</td>
+                      <td>84</td>
+                      <td>64</td>
+                      <td>92</td>
+                    </tr>
+                    <tr>
+                      <td>S</td>
+                      <td>44</td>
+                      <td>88</td>
+                      <td>68</td>
+                      <td>96</td>
+                    </tr>
+                    <tr>
+                      <td>XL</td>
+                      <td>50</td>
+                      <td>100</td>
+                      <td>80</td>
+                      <td>108</td>
+                    </tr>
+                  </tbody>
+
+                </table>
+              </div>
+              <p class="text--sm fw-regular modalSizeDescr">
+                *Все размеры указаны в см
+              </p>
+
+            </div>
+            <div class="tabs__panel">
+              <p class="modalDescr fw-regular">
+                Найдите в таблице параметры, близкие к вашим, чтобы
+                определить свой размер.
+              </p>
+              <div class="modalSizeTable mt-3 mb-3">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>INT</th>
+                      <th class="tableHeadSm">
+                        Обхват по
+                        груди
+                      </th>
+                      <th class="tableHeadSm">
+                        Обхват по
+                        талии
+                      </th>
+                      <th class="tableHeadSm">
+                        Обхват по
+                        бедрам
+                      </th>
+                      <th class="tableHeadSm">
+                        Длина
+                        рукава
+                      </th>
+                      <th class="tableHeadSm">
+                        Длина
+                        изделия
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>XS</td>
+                      <td>80</td>
+                      <td>74</td>
+                      <td>82</td>
+                      <td>64</td>
+                      <td>137</td>
+                    </tr>
+                    <tr>
+                      <td>S</td>
+                      <td>84</td>
+                      <td>78</td>
+                      <td>86</td>
+                      <td>66</td>
+                      <td>142</td>
+                    </tr>
+                    <tr>
+                      <td>M</td>
+                      <td>88</td>
+                      <td>82</td>
+                      <td>90</td>
+                      <td>66</td>
+                      <td>142</td>
+                    </tr>
+                  </tbody>
+
+                </table>
+              </div>
+              <p class="text--sm fw-regular modalSizeDescr">
+                *Все размеры указаны в см
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p class="fw-regular mt-3 mb-4">
+          Не уверены в правильном выборе размера?<br>
+          Напишите нам или позвоните, и мы вам поможем
+        </p>
+
+        <div class="socials">
+          <div class="socialsList d-flex flex-wrap gap-2 gap-md-3">
+            <div>
+              <a href="#" target="_blank">
+                <img src="img/admin/socials/image-1.svg" alt="icon">
+              </a>
+            </div>
+            <div>
+              <a href="#" target="_blank">
+                <img src="img/admin/socials/image-2.svg" alt="icon">
+              </a>
+            </div>
+            <div>
+              <a href="#" target="_blank">
+                <img src="img/admin/socials/image-3.svg" alt="icon">
+              </a>
+            </div>
+            <div>
+              <a href="#" target="_blank">
+                <img src="img/admin/socials/image-4.svg" alt="icon">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
       </div>
-      <p class="footerText">
-        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-        "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
-        размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
-        без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
-        послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы
-        электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-      </p>
-      <div class="footerSocials socials">
-        <ul>
-          <li>
-            <a href="#">
-              <img src="img/admin/socials/telegram.svg" alt="icon">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/admin/socials/youtube.svg" alt="icon">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/admin/socials/dzen.svg" alt="icon">
-            </a>
-          </li>
-        </ul>
-      </div>
+
     </div>
-  </div>
-</footer>
-		<!-- modal -->
-<!-- order -->
-<div class="modal" id="modalOrder">
 
-  <div class="modalHead">
-    <h2 class="h2">Оставьте заявку</h2>
-    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24" tabindex="-1">
-        <path d="M20 20L4 4m16 0L4 20"></path>
-      </svg>
-    </button>
-  </div>
+    <!-- sostav -->
+    <div class="modal" id="modalSostav">
 
-  <div class="modalContent">
-    <p class="modalDescr">
-      Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
-    </p>
-    <div class="modalForm">
-      <div class="inputW">
-        <input type="text" class="formInput" placeholder="Как вас зовут?">
+      <div class="modalHead modalHead--flex modalHead--borderB">
+        <button data-fancybox-close class="f-button f-button--static is-close-btn" title="Close"><svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+        <h2 class="modalTitle">Состав и уход</h2>
       </div>
-      <div class="inputW">
-        <input type="tel" class="formInput" placeholder="+7 (___) ___-__-__" inputmode="text">
-      </div>
-      <button class="button button--blue formBtn">
-        Отправить заявку
-      </button>
-      <div class="agreement">
-        <p>
-          Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
+
+      <div class="modalContent">
+        <p class="modalDescr fw-regular">
+          100% Натуральный мех единарога. Подкладка: 50% Вискоза, 50% Полиэстер<br><br>
+          - Не стирать<br>- Не отбеливать<br>- Не гладить<br>- Барабанная сушка запрещена<br> - Химчистка
+          запрещена<br><br>
+          Только специализированная химчистка для кожи и меха Перед сухой чисткой отпороть или защитить пуговицы и
+          другую
+          фурнитуру
         </p>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- rassrochka -->
-<div class="modal" id="modalRassr">
+    <!-- cert -->
+    <div class="modal" id="modalCert">
 
-  <div class="modalHead modalRassrHead modalHead--between modalHead--flex">
-    <div class="modalRassrHeadEmpty"></div>
-    <img src="img/admin/logo/rassr.svg" alt="logo" class="modalRassrImg">
-    <button data-fancybox-close class="f-button f-button--static is-close-btn" title="Close"><svg
-        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
-        <path d="M20 20L4 4m16 0L4 20"></path>
-      </svg>
-    </button>
-  </div>
-
-  <div class="h1 modalRassrTitle">
-    Оплатите с Долями только 25% стоимости покупки
-  </div>
-
-  <div class="text--lg text-center modalRassrDescr fw-regular">
-    Оставшиеся три платежа спишутся автоматически с шагом в две недели
-  </div>
-
-  <div class="modalContent">
-    <div class="modalRassrTable">
-      <div class="modalRassrTableHead">
-
-        <div class="modalRassrTableItem active">
-          <div class="text--lg fw-regular">
-            25%
-          </div>
-          <div class="fw-regular">
-            Платеж сегодня
-          </div>
-        </div><!-- /modalRassrTableItem -->
-
-        <div class="modalRassrTableItem">
-          <div class="text--lg fw-regular">
-            25%
-          </div>
-          <div class="fw-regular">
-            Через 2 недели
-          </div>
-        </div><!-- /modalRassrTableItem -->
-
-        <div class="modalRassrTableItem">
-          <div class="text--lg fw-regular">
-            25%
-          </div>
-          <div class="fw-regular">
-            Платеж 4 недели
-          </div>
-        </div><!-- /modalRassrTableItem -->
-
-        <div class="modalRassrTableItem">
-          <div class="text--lg fw-regular">
-            25%
-          </div>
-          <div class="fw-regular">
-            Платеж 6 недель
-          </div>
-        </div><!-- /modalRassrTableItem -->
-
+      <div class="modalHead modalHead--flex modalHead--borderB">
+        <button data-fancybox-close class="f-button f-button--static is-close-btn" title="Close"><svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+        <h2 class="modalTitle">Условия использования</h2>
       </div>
-      <div class="modalRassrCheckbox fw-regular">
-        Оплачивайте покупки частями — по 25% каждые
-        две недели
-      </div>
-      <div class="modalRassrCheckbox fw-regular">
-        Никаких дополнительных платежей — как
-        обычная оплата картой
-      </div>
-    </div>
-    <div class="modalRassrFooter">
-      Подробную информацию о работе сервиса можно
-      посмотреть на сайте <a href="#">dolyame.ru</a> 
-    </div>
-    <button data-fancybox-close class="button button--100 button--radius button--lg button--black is-close-btn"
-      title="Close">
-      Закрыть
-    </button>
-  </div>
-</div>
 
-<!-- size -->
-<div class="modal" id="modalSize">
+      <div class="modalContent content fw-regular">
+        <ol>
+          <li>
+            Срок действия сертификата — 3 года.
+          </li>
+          <li>
+            Номинал сертификата вы определяете сами — от 500 до 500 000 рублей.
+          </li>
+          <li>
+            Виртуальный сертификат будет отправлен по электронной почте или в СМС, вы можете указать дату и время
+            доставки,
+            а также добавить небольшой текст.
+          </li>
+          <li>
+            Виртуальный сертификат можно привязать к личному кабинету клиента Code5 — при оформлении или позже по номеру
+            телефона.
+          </li>
+          <li>
+            Физическим и виртуальным сертификатом можно оплатить покупку в розничных магазинах Code5, на сайте и в
+            приложении (способ оплаты «Картой онлайн»).
+          </li>
+          <li>
+            Подарочный сертификат можно использовать одновременно с бонусными баллами и промокодом.
+          </li>
+          <li>
+            Сумму сертификата можно использовать для оплаты части или всего заказа, оплатить доставку или разделить на
+            несколько покупок.
+          </li>
+          <li>
+            За приобретение подарочного сертификата бонусные баллы покупателю не начисляются.
+          </li>
+          <li>
+            Чтобы вернуть подарочный сертификат (физический или виртуальный), обратитесь в розничный магазин.
+          </li>
+          <li>
+            Если вы возвращаете покупку, оплаченную сертификатом, деньги вернутся на карту или наличными.
+          </li>
+          <li>
+            Больше о подарочных сертификатах вы можете узнать из <a class="d-inline" href="#">Публичной оферты.</a> 
+          </li>
+        </ol>
 
-  <div class="modalHead modalHead--flex modalHead--borderB">
-    <button data-fancybox-close class="f-button f-button--static is-close-btn" title="Close"><svg
-        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
-        <path d="M20 20L4 4m16 0L4 20"></path>
-      </svg>
-    </button>
-    <h2 class="modalTitle">Подберите свой точный размер</h2>
-  </div>
-
-  <div class="modalContent">
-    <div class="tabs" data-tabs="popup">
-      <ul class="tabs__nav">
-        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Таблица размеров</button></li>
-        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Обмеры изделия</button></li>
-      </ul>
-      <div class="tabs__content">
-        <div class="tabs__panel">
-          <p class="modalDescr fw-regular">
-            Найдите в таблице параметры, близкие к вашим, чтобы
-            определить свой размер.
-          </p>
-          <div class="modalSizeTable mt-3 mb-3">
-            <table>
-              <thead>
-                <tr>
-                  <th>INT</th>
-                  <th>RU</th>
-                  <th>Обхват груди</th>
-                  <th>Обхват талии</th>
-                  <th>Обхват бедер</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>XXS</td>
-                  <td>40</td>
-                  <td>80</td>
-                  <td>60</td>
-                  <td>88</td>
-                </tr>
-                <tr>
-                  <td>XS</td>
-                  <td>42</td>
-                  <td>84</td>
-                  <td>64</td>
-                  <td>92</td>
-                </tr>
-                <tr>
-                  <td>S</td>
-                  <td>44</td>
-                  <td>88</td>
-                  <td>68</td>
-                  <td>96</td>
-                </tr>
-                <tr>
-                  <td>XL</td>
-                  <td>50</td>
-                  <td>100</td>
-                  <td>80</td>
-                  <td>108</td>
-                </tr>
-              </tbody>
-
-            </table>
-          </div>
-          <p class="text--sm fw-regular modalSizeDescr">
-            *Все размеры указаны в см
-          </p>
-
-        </div>
-        <div class="tabs__panel">
-          <p class="modalDescr fw-regular">
-            Найдите в таблице параметры, близкие к вашим, чтобы
-            определить свой размер.
-          </p>
-          <div class="modalSizeTable mt-3 mb-3">
-            <table>
-              <thead>
-                <tr>
-                  <th>INT</th>
-                  <th class="tableHeadSm">
-                    Обхват по
-                    груди
-                  </th>
-                  <th class="tableHeadSm">
-                    Обхват по
-                    талии
-                  </th>
-                  <th class="tableHeadSm">
-                    Обхват по
-                    бедрам
-                  </th>
-                  <th class="tableHeadSm">
-                    Длина
-                    рукава
-                  </th>
-                  <th class="tableHeadSm">
-                    Длина
-                    изделия
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>XS</td>
-                  <td>80</td>
-                  <td>74</td>
-                  <td>82</td>
-                  <td>64</td>
-                  <td>137</td>
-                </tr>
-                <tr>
-                  <td>S</td>
-                  <td>84</td>
-                  <td>78</td>
-                  <td>86</td>
-                  <td>66</td>
-                  <td>142</td>
-                </tr>
-                <tr>
-                  <td>M</td>
-                  <td>88</td>
-                  <td>82</td>
-                  <td>90</td>
-                  <td>66</td>
-                  <td>142</td>
-                </tr>
-              </tbody>
-
-            </table>
-          </div>
-          <p class="text--sm fw-regular modalSizeDescr">
-            *Все размеры указаны в см
-          </p>
-        </div>
       </div>
     </div>
 
-    <p class="fw-regular mt-3 mb-4">
-      Не уверены в правильном выборе размера?<br>
-      Напишите нам или позвоните, и мы вам поможем
-    </p>
+    <!-- cart -->
+    <div class="modal" id="modalCart">
 
-    <div class="socials">
-      <div class="socialsList d-flex flex-wrap gap-2 gap-md-3">
-        <div>
-          <a href="#" target="_blank">
-            <img src="img/admin/socials/image-1.svg" alt="icon">
-          </a>
-        </div>
-        <div>
-          <a href="#" target="_blank">
-            <img src="img/admin/socials/image-2.svg" alt="icon">
-          </a>
-        </div>
-        <div>
-          <a href="#" target="_blank">
-            <img src="img/admin/socials/image-3.svg" alt="icon">
-          </a>
-        </div>
-        <div>
-          <a href="#" target="_blank">
-            <img src="img/admin/socials/image-4.svg" alt="icon">
-          </a>
-        </div>
+      <div class="modalHead modalHead--flex justify-content-between">
+
+        <h2 class="modalTitle">Подробнее</h2>
+        <button data-fancybox-close class="f-button f-button--static is-close-btn" title="Close"><svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalContent content fw-regular">
+        <p>
+          После примерки вы можете купить только то, что подойдет:
+        </p>
+        <ul>
+          <li>
+            На примерку заказа у вас будет 15 минут
+          </li>
+          <li>
+            Оплата курьеру наличными или банковской картой
+          </li>
+          <li>
+            Бонусы списываются только на сумму фактического выкупа, остальные бонусы вернутся на ваш счет
+          </li>
+          <li>
+            Если вы отказались от заказа или выкупили его часть, промокоды не восстанавливаются
+          </li>
+          <li>
+            Если после примерки вы отказались от заказа, понадобится оплатить доставку курьеру
+          </li>
+
+        </ul>
+        <p>
+          Примерка недоступна, если вы:
+        </p>
+        <ul>
+          <li>
+            Выбрали способ оплаты «Банковской картой»
+          </li>
+          <li>
+            Заказали несколько экземпляров модели в одном и том же размере: например, три футболки в размере S с
+            одинаковым
+            артикулом)
+          </li>
+        </ul>
+
       </div>
     </div>
 
 
-  </div>
 
-</div>
+    <!-- faq -->
+    <div class="modal" id="modalFaq">
 
-<!-- sostav -->
-<div class="modal" id="modalSostav">
-
-  <div class="modalHead modalHead--flex modalHead--borderB">
-    <button data-fancybox-close class="f-button f-button--static is-close-btn" title="Close"><svg
-        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
-        <path d="M20 20L4 4m16 0L4 20"></path>
-      </svg>
-    </button>
-    <h2 class="modalTitle">Состав и уход</h2>
-  </div>
-
-  <div class="modalContent">
-    <p class="modalDescr fw-regular">
-      100% Натуральный мех единарога. Подкладка: 50% Вискоза, 50% Полиэстер<br><br>
-      - Не стирать<br>- Не отбеливать<br>- Не гладить<br>- Барабанная сушка запрещена<br> - Химчистка запрещена<br><br>
-      Только специализированная химчистка для кожи и меха Перед сухой чисткой отпороть или защитить пуговицы и другую
-      фурнитуру
-    </p>
-  </div>
-</div>
-
-<!-- cert -->
-<div class="modal" id="modalCert">
-
-  <div class="modalHead modalHead--flex modalHead--borderB">
-    <button data-fancybox-close class="f-button f-button--static is-close-btn" title="Close"><svg
-        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
-        <path d="M20 20L4 4m16 0L4 20"></path>
-      </svg>
-    </button>
-    <h2 class="modalTitle">Условия использования</h2>
-  </div>
-
-  <div class="modalContent content fw-regular">
-    <ol>
-      <li>
-        Срок действия сертификата — 3 года.
-      </li>
-      <li>
-        Номинал сертификата вы определяете сами — от 500 до 500 000 рублей.
-      </li>
-      <li>
-        Виртуальный сертификат будет отправлен по электронной почте или в СМС, вы можете указать дату и время доставки,
-        а также добавить небольшой текст.
-      </li>
-      <li>
-        Виртуальный сертификат можно привязать к личному кабинету клиента Code5 — при оформлении или позже по номеру
-        телефона.
-      </li>
-      <li>
-        Физическим и виртуальным сертификатом можно оплатить покупку в розничных магазинах Code5, на сайте и в
-        приложении (способ оплаты «Картой онлайн»).
-      </li>
-      <li>
-        Подарочный сертификат можно использовать одновременно с бонусными баллами и промокодом.
-      </li>
-      <li>
-        Сумму сертификата можно использовать для оплаты части или всего заказа, оплатить доставку или разделить на
-        несколько покупок.
-      </li>
-      <li>
-        За приобретение подарочного сертификата бонусные баллы покупателю не начисляются.
-      </li>
-      <li>
-        Чтобы вернуть подарочный сертификат (физический или виртуальный), обратитесь в розничный магазин.
-      </li>
-      <li>
-        Если вы возвращаете покупку, оплаченную сертификатом, деньги вернутся на карту или наличными.
-      </li>
-      <li>
-        Больше о подарочных сертификатах вы можете узнать из <a class="d-inline" href="#">Публичной оферты.</a> 
-      </li>
-    </ol>
-
-  </div>
-</div>
-
-<!-- cart -->
-<div class="modal" id="modalCart">
-
-  <div class="modalHead modalHead--flex justify-content-between">
-
-    <h2 class="modalTitle">Подробнее</h2>
-    <button data-fancybox-close class="f-button f-button--static is-close-btn" title="Close"><svg
-        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
-        <path d="M20 20L4 4m16 0L4 20"></path>
-      </svg>
-    </button>
-  </div>
-
-  <div class="modalContent content fw-regular">
-    <p>
-      После примерки вы можете купить только то, что подойдет:
-    </p>
-    <ul>
-      <li>
-        На примерку заказа у вас будет 15 минут
-      </li>
-      <li>
-        Оплата курьеру наличными или банковской картой
-      </li>
-      <li>
-        Бонусы списываются только на сумму фактического выкупа, остальные бонусы вернутся на ваш счет
-      </li>
-      <li>
-        Если вы отказались от заказа или выкупили его часть, промокоды не восстанавливаются
-      </li>
-      <li>
-        Если после примерки вы отказались от заказа, понадобится оплатить доставку курьеру
-      </li>
-
-    </ul>
-    <p>
-      Примерка недоступна, если вы:
-    </p>
-    <ul>
-      <li>
-        Выбрали способ оплаты «Банковской картой»
-      </li>
-      <li>
-        Заказали несколько экземпляров модели в одном и том же размере: например, три футболки в размере S с одинаковым
-        артикулом)
-      </li>
-    </ul>
-
-  </div>
-</div>
-
-
-
-<!-- faq -->
-<div class="modal" id="modalFaq">
-
-  <div class="modalHead modalHead--flex modalHead--borderB">
-    <button data-fancybox-close class="f-button f-button--static is-close-btn" title="Close"><svg
-        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
-        <path d="M20 20L4 4m16 0L4 20"></path>
-      </svg>
-    </button>
-    <h2 class="modalTitle">Оплата по частям</h2>
-  </div>
-
-  <div class="modalContent content fw-regular">
-
-    <p>
-      Оплата по частям
-    </p>
-    <p>
-      Заказ можно оплатить по частям только на сайте: решение от банка вы получите в течение 5 минут. 
-    </p>
-    <ul>
-      <li>
-        Перейдите в корзину и нажмите кнопку «Оплатить заказ», чтобы перейти на страницу ЮКаssа. Там вам нужно выбрать
-        вкладку «По частям»
-      </li>
-      <li>
-        Выберите подходящий тариф: 6 месяцев или 12 месяцев с беспроцентным периодом 5 дней
-      </li>
-      <li>
-        Авторизуйтесь на сайте ЮКаssа в открывшемся окне или создайте новый аккаунт — это займет менее минуты
-      </li>
-      <li>
-        Заполните анкету и отправьте ее на рассмотрение
-      </li>
-      <li>
-        В течение 5 минут анкета будет подтверждена, а вы получите запрос на фото двух страниц паспорта
-      </li>
-      <li>
-        Финальный шаг — просмотр всех условий и ваше согласие
-      </li>
-      <li>
-        Если вы возвращаете или отменяете заказ, покупка аннулируется. Вам ничего оплачивать не нужно
-      </li>
-    </ul>
-
-    <div class="text--gray mt-4">БЫЛА ЛИ СТАТЬЯ ПОЛЕЗНА?</div>
-
-    <div class="d-flex gap-3 mt-4">
-      <button class="articleBtn">👍 Да </button>
-      <button class="articleBtn">👎 Нет </button>
-    </div>
-
-    <div class="text-uppercase mt-4">У ВАС ОСТАЛИСЬ ВОПРОСЫ?</div>
-
-    <div class="socials mt-3">
-      <div class="socialsList d-flex gap-3">
-        <div>
-          <a class="d-flex gap-3 align-items-center" href="#" target="_blank">
-            <img src="img/admin/socials/image-1.svg" alt="icon">
-            Whats App
-          </a>
-        </div>
-        <div>
-          <a class="d-flex gap-3 align-items-center" href="#" target="_blank">
-            <img src="img/admin/socials/image-3.svg" alt="icon">
-            Telegram
-          </a>
-        </div>
+      <div class="modalHead modalHead--flex modalHead--borderB">
+        <button data-fancybox-close class="f-button f-button--static is-close-btn" title="Close"><svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+            <path d="M20 20L4 4m16 0L4 20"></path>
+          </svg>
+        </button>
+        <h2 class="modalTitle">Оплата по частям</h2>
       </div>
+
+      <div class="modalContent content fw-regular">
+
+        <p>
+          Оплата по частям
+        </p>
+        <p>
+          Заказ можно оплатить по частям только на сайте: решение от банка вы получите в течение 5 минут. 
+        </p>
+        <ul>
+          <li>
+            Перейдите в корзину и нажмите кнопку «Оплатить заказ», чтобы перейти на страницу ЮКаssа. Там вам нужно
+            выбрать
+            вкладку «По частям»
+          </li>
+          <li>
+            Выберите подходящий тариф: 6 месяцев или 12 месяцев с беспроцентным периодом 5 дней
+          </li>
+          <li>
+            Авторизуйтесь на сайте ЮКаssа в открывшемся окне или создайте новый аккаунт — это займет менее минуты
+          </li>
+          <li>
+            Заполните анкету и отправьте ее на рассмотрение
+          </li>
+          <li>
+            В течение 5 минут анкета будет подтверждена, а вы получите запрос на фото двух страниц паспорта
+          </li>
+          <li>
+            Финальный шаг — просмотр всех условий и ваше согласие
+          </li>
+          <li>
+            Если вы возвращаете или отменяете заказ, покупка аннулируется. Вам ничего оплачивать не нужно
+          </li>
+        </ul>
+
+        <div class="text--gray mt-4">БЫЛА ЛИ СТАТЬЯ ПОЛЕЗНА?</div>
+
+        <div class="d-flex gap-3 mt-4">
+          <button class="articleBtn">👍 Да </button>
+          <button class="articleBtn">👎 Нет </button>
+        </div>
+
+        <div class="text-uppercase mt-4">У ВАС ОСТАЛИСЬ ВОПРОСЫ?</div>
+
+        <div class="socials mt-3">
+          <div class="socialsList d-flex gap-3">
+            <div>
+              <a class="d-flex gap-3 align-items-center" href="#" target="_blank">
+                <img src="img/admin/socials/image-1.svg" alt="icon">
+                Whats App
+              </a>
+            </div>
+            <div>
+              <a class="d-flex gap-3 align-items-center" href="#" target="_blank">
+                <img src="img/admin/socials/image-3.svg" alt="icon">
+                Telegram
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
     </div>
-
-
   </div>
 
-</div>
-	</div>
-
-	<script src="js/app.min.js"></script>
+  <script src="js/app.min.js"></script>
 
 
 
